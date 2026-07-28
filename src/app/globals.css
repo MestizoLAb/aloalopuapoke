@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+/* =========================================================
+   ALO ALO PUA POKE — Design system
+   Palette ispirata al locale reale (crema/sabbia, verde palma,
+   turchese laguna del neon + sedie, corallo, oro mango) e ai
+   token del mother brand Mestizo Lab (ink/ink-mid/ink-soft).
+   ========================================================= */
+@theme {
+  /* Font (variabili iniettate da next/font in layout.tsx) — brandbook AloAlo:
+     display/titoli = Fredoka (sans caldo e tondeggiante, sostituto web di Skia);
+     accent  = Fredoka (parole-accento, stesso font in colore);
+     body    = Montserrat (indicato dalla guida per il corpo testo). */
+  --font-display: var(--font-fredoka), "Trebuchet MS", system-ui, sans-serif;
+  --font-accent: var(--font-fredoka), "Trebuchet MS", system-ui, sans-serif;
+  --font-body: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+
+  /* --- PALETTE ALO ALO (brandbook) in chiave editoriale "Roy's" ---
+     Verde brand = colore firma/primario (ruolo del plum di Roy's).
+     Secondari: rosso ibisco · arancio · azzurro oceano.
+     Nomi dei token invariati per non rompere le classi esistenti. */
+
+  /* Superfici chiare — CREMA UFFICIALE del brandbook (#ffebda) */
+  --color-paper: #fff6ec;         /* bianco caldo per card su crema */
+  --color-cream: #ffebda;         /* crema ufficiale — sfondo del sito */
+  --color-sand: #f7dcc4;          /* crema più profonda per superfici/bordi */
+
+  /* VERDE PRIMARIO — brandbook #1c8466 (Pantone 3288 C) */
+  --color-forest: #1c8466;        /* verde brand (sezioni/accenti) */
+  --color-forest-mid: #135c46;    /* verde scuro AA per testo su crema */
+  --color-forest-deep: #1c8466;   /* verde brand (header, footer, sezioni scure) */
+  --color-forest-darker: #17624b; /* verde per barre annuncio/marquee */
+  --color-palm: #34a081;
+  --color-palm-soft: #a9dcc9;
+
+  /* AZZURRO oceano — brandbook #5da1d7 (Pantone 2171 C) */
+  --color-lagoon: #5da1d7;
+  --color-lagoon-deep: #2c689e;   /* AA per testo su crema */
+  --color-lagoon-soft: #b6d4ec;
+
+  /* ARANCIO mango — brandbook #faa31b (Pantone 137 C) */
+  --color-coral: #faa31b;         /* arancio brillante (fill, badge, ibisco) */
+  --color-coral-deep: #9a5a06;    /* arancio bruciato AA per testo/bottoni */
+  --color-gold: #faa31b;
+  --color-gold-soft: #ffcf85;
+
+  /* Alias "rosso" mappato all'arancio (il brand non ha rosso) */
+  --color-red: #faa31b;
+  --color-red-deep: #d6820c;
+
+  /* ROSA — brandbook #f493b4 (Pantone 6051 C) */
+  --color-pink: #f493b4;
+  --color-pink-deep: #bf4e79;     /* rosa scuro AA per testo su crema */
+
+  /* Inchiostri */
+  --color-ink: #241d16;
+  --color-ink-mid: #443a2c;
+  --color-ink-soft: #63564a;
+
+  /* Radius — morbido, coerente col logo a bolle */
+  --radius-card: 0.85rem;
+
+  /* Animazioni */
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-kenburns: kenburns 16s ease-out infinite alternate;
+  --animate-slide-up: slideUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fadeIn 0.9s ease both;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes kenburns {
+    from { transform: scale(1.02); }
+    to { transform: scale(1.14); }
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  ::selection {
+    background-color: var(--color-lagoon);
+    color: var(--color-paper);
+  }
+
+  /* Focus visibile e accessibile */
+  :focus-visible {
+    outline: 2px solid var(--color-lagoon);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  /* Reveal on scroll (IntersectionObserver in Reveal.tsx) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Occhiello/etichetta — piccola, spaziata (Fredoka) */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.74rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* Parola-accento — Fredoka in colore (brand), non più corsivo serif */
+  .script {
+    font-family: var(--font-accent);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-transform: none;
+  }
+
+  /* Titolo — Fredoka caldo e tondo, in caso normale (no ALL-CAPS) */
+  .display-caps {
+    font-family: var(--font-display);
+    text-transform: none;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    line-height: 1.04;
+  }
+
+  /* Pannello crema sovrapposto (card hero/contenuto) */
+  .panel {
+    background-color: var(--color-paper);
+    border-radius: var(--radius-card);
+    box-shadow: 0 40px 80px -40px rgba(16, 40, 25, 0.45);
+  }
+
+  /* Bottone base — a pillola, Fredoka, tracking morbido (brand caldo) */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    padding: 0.72rem 1.75rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  /* Pieni */
+  .btn-forest {
+    background-color: #176b47; /* verde medio AA con testo chiaro */
+    color: var(--color-paper);
+  }
+  .btn-forest:hover {
+    background-color: var(--color-forest-deep);
+  }
+  .btn-coral {
+    background-color: var(--color-coral-deep);
+    color: var(--color-paper);
+  }
+  .btn-coral:hover {
+    background-color: color-mix(in oklab, var(--color-coral-deep), black 12%);
+  }
+  /* Outline (stile Roy's) — colore/hover impostati via utility al call-site.
+     Default: verde primario. */
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--color-forest);
+    color: var(--color-forest-mid);
+  }
+  .btn-outline:hover {
+    background-color: var(--color-forest-mid);
+    color: #fff;
+    border-color: var(--color-forest-mid);
+  }
+  /* Ghost su fondo scuro */
+  .btn-ghost {
+    background-color: transparent;
+    color: currentColor;
+    border: 1.5px solid currentColor;
+  }
+  .btn-ghost:hover {
+    background-color: currentColor;
+  }
+
+  /* Texture puntinata leggera per sezioni scure */
+  .dot-grid {
+    background-image: radial-gradient(rgba(240, 199, 113, 0.16) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}

@@ -1,0 +1,25 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+next-env.d.ts
+
+# --- File di lavoro/sorgente: NON versionare ---
+# Documento di consegna: contiene password e codice AuthInfo — MAI nel repo
+Consegna_*.pdf
+*.pdf
+*.docx
+HANDOFF.md
+# Cartella brand sorgente (i loghi pronti sono in /public/img)
+/AloAlo/
+# Immagini sorgente nella root (le versioni pronte sono in /public/img)
+/*.jpg
+/*.jpeg
+/*.png
+/*.webp
+# Cartella di configurazione locale dell'assistente
+/.claude/
