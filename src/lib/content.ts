@@ -43,6 +43,7 @@ const it = {
     order: "Ordina ora",
   },
   announce: "Scarica l’AloAlo App e ottieni il 10% sul primo ordine →",
+  reopen: "Riapertura il 31 agosto · Locale in fase di rinnovamento",
   hero: {
     eyebrow: "Poke bar hawaiano · Bologna",
     titleTop: "L’Hawaiian taste",
@@ -208,6 +209,7 @@ const en: typeof it = {
     order: "Order now",
   },
   announce: "Download the AloAlo App and get 10% off your first order →",
+  reopen: "Reopening August 31 · Venue under renovation",
   hero: {
     eyebrow: "Hawaiian poke bar · Bologna",
     titleTop: "The Hawaiian taste",

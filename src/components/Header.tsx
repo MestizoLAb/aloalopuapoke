@@ -38,7 +38,15 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Announcement bar */}
+      {/* Avviso RIAPERTURA — temporaneo: dopo il 31/08 rimuovere questo blocco e riattivare la barra app qui sotto */}
+      <div className="bg-coral text-ink">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2 text-center text-[0.7rem] font-bold uppercase tracking-[0.15em]">
+          <span aria-hidden="true">🌺</span>
+          <span>{t.reopen}</span>
+        </div>
+      </div>
+
+      {/* Barra app — RIPRISTINARE dopo la riapertura (rimuovendo il blocco avviso sopra):
       <div className="bg-forest-darker text-white">
         <Link
           href="/app"
@@ -47,6 +55,7 @@ export default function Header() {
           {t.announce}
         </Link>
       </div>
+      */}
 
       {/* Barra principale — verde profondo, logo che sborda (stile Roy's) */}
       <div
