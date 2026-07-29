@@ -10,8 +10,10 @@ export default function ContattiView() {
   const { lang } = useLang();
   const t = content[lang].contactPage;
 
+  // Mappa via OpenStreetMap: nessun cookie di profilazione/marketing → conforme
+  // GDPR senza bisogno di consenso preventivo (a differenza dell'embed di Google Maps).
   const mapSrc =
-    "https://www.google.com/maps?q=Via+Filippo+Schiassi+32a,+40138+Bologna&output=embed";
+    "https://www.openstreetmap.org/export/embed.html?bbox=11.3650%2C44.4851%2C11.3772%2C44.4911&layer=mapnik&marker=44.488124%2C11.371082";
 
   return (
     <>

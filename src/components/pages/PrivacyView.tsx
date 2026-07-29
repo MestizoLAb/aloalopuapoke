@@ -18,7 +18,7 @@ const POLICY: Record<"it" | "en", Policy> = {
   it: {
     eyebrow: "Informativa",
     title: "Privacy & Cookie Policy",
-    updated: "Ultimo aggiornamento: 15 luglio 2026",
+    updated: "Ultimo aggiornamento: 29 luglio 2026",
     intro:
       "La presente informativa descrive come vengono trattati i dati personali degli utenti che consultano il sito aloalopuapoke.it e che interagiscono con i servizi in esso presenti (iscrizione alla newsletter, richieste di contatto), ai sensi del Regolamento (UE) 2016/679 (“GDPR”) e del D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018 (“Codice Privacy”).",
     sections: [
@@ -36,7 +36,7 @@ const POLICY: Record<"it" | "en", Policy> = {
         list: [
           "Iscrizione alla newsletter — indirizzo e-mail. Finalità: inviarti aggiornamenti, novità e iniziative. Base giuridica: il tuo consenso (art. 6.1.a GDPR), revocabile in ogni momento.",
           "Richieste di contatto — quando ci scrivi via e-mail o ci chiami, trattiamo i dati che ci fornisci (es. nome, e-mail, numero di telefono e contenuto del messaggio) al solo fine di rispondere alla tua richiesta. Base giuridica: esecuzione di misure precontrattuali richieste dall’interessato (art. 6.1.b GDPR).",
-          "Dati di navigazione e cookie — dati tecnici (indirizzo IP, tipo di browser/dispositivo, pagine visitate) necessari al funzionamento del Sito e, previo consenso, dati statistici e di marketing (vedi la sezione 3). Base giuridica: legittimo interesse per i cookie tecnici (art. 6.1.f) e consenso per quelli di analisi/marketing (art. 6.1.a).",
+          "Dati di navigazione e cookie — dati tecnici (indirizzo IP, tipo di browser/dispositivo, pagine visitate) necessari al funzionamento e alla sicurezza del Sito. Base giuridica: legittimo interesse (art. 6.1.f GDPR). Il Sito non utilizza cookie di profilazione o marketing (vedi la sezione 3).",
         ],
       },
       {
@@ -46,15 +46,19 @@ const POLICY: Record<"it" | "en", Policy> = {
           {
             h: "Cookie tecnici (senza consenso)",
             p: [
-              "Necessari al corretto funzionamento del Sito e a memorizzare le tue preferenze (es. lingua e la scelta espressa su questo banner). Non richiedono consenso.",
+              "Necessari al corretto funzionamento del Sito e a memorizzare le tue preferenze (es. lingua e la scelta espressa su questo banner). Sono salvati nella memoria locale del browser e non richiedono consenso.",
             ],
           },
           {
-            h: "Cookie e strumenti di analisi e marketing (previo consenso)",
-            p: ["Attivati solo dopo il tuo consenso tramite il banner. Se li accetti, utilizziamo:"],
-            list: [
-              "Google Analytics 4 (Google Ireland Ltd.) — statistiche di navigazione in forma aggregata, con anonimizzazione dell’IP.",
-              "Meta Pixel (Meta Platforms Ireland Ltd.) — misurazione delle campagne e remarketing.",
+            h: "Mappa (OpenStreetMap)",
+            p: [
+              "Nella pagina Contatti mostriamo una mappa tramite OpenStreetMap: un servizio cartografico che non utilizza cookie di profilazione né a fini pubblicitari.",
+            ],
+          },
+          {
+            h: "Nessun cookie di analisi o marketing",
+            p: [
+              "Allo stato attuale il Sito NON utilizza cookie o strumenti di statistica, analisi o marketing di terze parti (come Google Analytics o Meta Pixel). Qualora in futuro venissero introdotti, saranno attivati soltanto previo tuo consenso e questa informativa sarà aggiornata di conseguenza.",
             ],
           },
         ],
@@ -62,7 +66,7 @@ const POLICY: Record<"it" | "en", Policy> = {
       {
         h: "",
         p: [
-          "Puoi modificare o revocare il consenso in qualsiasi momento tramite il link “Preferenze cookie” presente nel footer del Sito, oppure cancellando i cookie dalle impostazioni del tuo browser. La revoca non pregiudica la liceità del trattamento effettuato prima della stessa.",
+          "Puoi rivedere la scelta espressa sul banner in qualsiasi momento tramite il link “Preferenze cookie” presente nel footer del Sito, oppure gestire e cancellare i cookie tecnici dalle impostazioni del tuo browser.",
         ],
       },
       {
@@ -72,14 +76,14 @@ const POLICY: Record<"it" | "en", Policy> = {
         ],
         list: [
           "Vercel Inc. — hosting e distribuzione del Sito;",
-          "Google e Meta — statistiche e strumenti di marketing (solo con consenso);",
+          "OpenStreetMap Foundation — visualizzazione della mappa nella pagina Contatti;",
           "fornitori di posta elettronica e strumenti gestionali per rispondere alle richieste.",
         ],
       },
       {
         h: "5. Trasferimento dei dati fuori dall’UE",
         p: [
-          "Alcuni fornitori (es. Vercel, Google, Meta) possono trattare i dati anche negli Stati Uniti. In tal caso il trasferimento avviene sulla base di garanzie adeguate ai sensi degli artt. 44 e ss. GDPR, quali le Clausole Contrattuali Standard della Commissione Europea e/o l’adesione del fornitore al EU–U.S. Data Privacy Framework.",
+          "Il fornitore di hosting (Vercel Inc.) può trattare dati tecnici, come l’indirizzo IP presente nei log del server, anche negli Stati Uniti. In tal caso il trasferimento avviene sulla base di garanzie adeguate ai sensi degli artt. 44 e ss. GDPR, quali le Clausole Contrattuali Standard della Commissione Europea e/o l’adesione al EU–U.S. Data Privacy Framework.",
         ],
       },
       {
@@ -124,7 +128,7 @@ const POLICY: Record<"it" | "en", Policy> = {
   en: {
     eyebrow: "Legal notice",
     title: "Privacy & Cookie Policy",
-    updated: "Last updated: 15 July 2026",
+    updated: "Last updated: 29 July 2026",
     intro:
       "This notice describes how we process the personal data of users who visit the website aloalopuapoke.it and interact with the services available on it (newsletter sign-up, contact requests), pursuant to Regulation (EU) 2016/679 (“GDPR”) and Italian Legislative Decree 196/2003 as amended by Legislative Decree 101/2018 (“Privacy Code”).",
     sections: [
@@ -142,7 +146,7 @@ const POLICY: Record<"it" | "en", Policy> = {
         list: [
           "Newsletter sign-up — e-mail address. Purpose: to send you updates, news and initiatives. Legal basis: your consent (art. 6.1.a GDPR), which can be withdrawn at any time.",
           "Contact requests — when you write to us by e-mail or call us, we process the data you provide (e.g. name, e-mail, phone number and message content) solely to reply to your request. Legal basis: performance of pre-contractual measures requested by the data subject (art. 6.1.b GDPR).",
-          "Browsing data and cookies — technical data (IP address, browser/device type, pages visited) necessary for the Site to work and, subject to consent, statistical and marketing data (see section 3). Legal basis: legitimate interest for technical cookies (art. 6.1.f) and consent for analytics/marketing ones (art. 6.1.a).",
+          "Browsing data and cookies — technical data (IP address, browser/device type, pages visited) necessary for the Site to work and be secure. Legal basis: legitimate interest (art. 6.1.f GDPR). The Site does not use profiling or marketing cookies (see section 3).",
         ],
       },
       {
@@ -152,15 +156,19 @@ const POLICY: Record<"it" | "en", Policy> = {
           {
             h: "Technical cookies (no consent required)",
             p: [
-              "Necessary for the Site to work correctly and to store your preferences (e.g. language and the choice made on this banner). They do not require consent.",
+              "Necessary for the Site to work correctly and to store your preferences (e.g. language and the choice made on this banner). They are saved in your browser’s local storage and do not require consent.",
             ],
           },
           {
-            h: "Analytics and marketing cookies and tools (subject to consent)",
-            p: ["Enabled only after your consent via the banner. If you accept them, we use:"],
-            list: [
-              "Google Analytics 4 (Google Ireland Ltd.) — aggregate browsing statistics, with IP anonymisation.",
-              "Meta Pixel (Meta Platforms Ireland Ltd.) — campaign measurement and remarketing.",
+            h: "Map (OpenStreetMap)",
+            p: [
+              "On the Contact page we show a map via OpenStreetMap: a mapping service that uses no profiling or advertising cookies.",
+            ],
+          },
+          {
+            h: "No analytics or marketing cookies",
+            p: [
+              "At present the Site does NOT use any third-party statistics, analytics or marketing cookies or tools (such as Google Analytics or Meta Pixel). Should any be introduced in the future, they will be activated only with your prior consent and this notice will be updated accordingly.",
             ],
           },
         ],
@@ -168,7 +176,7 @@ const POLICY: Record<"it" | "en", Policy> = {
       {
         h: "",
         p: [
-          "You can change or withdraw your consent at any time via the “Cookie preferences” link in the Site footer, or by deleting cookies from your browser settings. Withdrawal does not affect the lawfulness of processing carried out before it.",
+          "You can review the choice made on the banner at any time via the “Cookie preferences” link in the Site footer, or manage and delete technical cookies from your browser settings.",
         ],
       },
       {
@@ -178,14 +186,14 @@ const POLICY: Record<"it" | "en", Policy> = {
         ],
         list: [
           "Vercel Inc. — hosting and distribution of the Site;",
-          "Google and Meta — statistics and marketing tools (with consent only);",
+          "OpenStreetMap Foundation — display of the map on the Contact page;",
           "e-mail providers and management tools used to reply to requests.",
         ],
       },
       {
         h: "5. Data transfers outside the EU",
         p: [
-          "Some providers (e.g. Vercel, Google, Meta) may also process data in the United States. In that case the transfer takes place on the basis of adequate safeguards pursuant to art. 44 et seq. GDPR, such as the European Commission’s Standard Contractual Clauses and/or the provider’s adherence to the EU–U.S. Data Privacy Framework.",
+          "The hosting provider (Vercel Inc.) may process technical data, such as the IP address in server logs, also in the United States. In that case the transfer takes place on the basis of adequate safeguards pursuant to art. 44 et seq. GDPR, such as the European Commission’s Standard Contractual Clauses and/or adherence to the EU–U.S. Data Privacy Framework.",
         ],
       },
       {
