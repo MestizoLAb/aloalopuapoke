@@ -35,7 +35,22 @@ export default function JsonLd() {
     areaServed: ["Bologna", "Sant'Orsola", "San Donato", "Cirenaica"],
     hasMenu: `${SITE}/menu`,
     acceptsReservations: false,
-    sameAs: [info.social.instagram, info.social.facebook].filter(Boolean),
+    // Collega Alo Alo alla casa madre Mestizo Lab (stessa entità) → segnale GEO
+    // reciproco: i due siti si "certificano" a vicenda. Deep link a /alo-alo.
+    sameAs: [info.social.instagram, info.social.facebook, "https://mestizo-lab.com/alo-alo"].filter(Boolean),
+    parentOrganization: {
+      "@type": "Organization",
+      "@id": "https://mestizo-lab.com/#organization",
+      name: "Mestizo Lab",
+      legalName: "ORDINE 33 S.R.L.",
+      url: "https://mestizo-lab.com",
+      sameAs: "https://mestizo-lab.com",
+    },
+    potentialAction: {
+      "@type": "OrderAction",
+      name: "Ordina online",
+      target: `${SITE}/app`,
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
