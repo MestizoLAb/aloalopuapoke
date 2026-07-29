@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MenuView from "@/components/pages/MenuView";
+import MenuJsonLd from "@/components/MenuJsonLd";
 
 export const metadata: Metadata = {
   title: "Menù e prezzi delle poke bowl a Bologna",
@@ -9,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function MenuPage() {
-  return <MenuView />;
+  return (
+    <>
+      <MenuJsonLd />
+      <MenuView />
+    </>
+  );
 }

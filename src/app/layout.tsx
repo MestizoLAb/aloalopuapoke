@@ -48,6 +48,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "it_IT",
     siteName: "Alo Alo Pua Pokè",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Poke bowl hawaiana di Alo Alo Pua Pokè a Bologna",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Poke a domicilio a Bologna — Alo Alo Pua Pokè",
+    description:
+      "Bowl hawaiane fresche, salse fatte in casa, vegane e gluten free. Consegna e asporto in Via Schiassi, Bologna.",
+    images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
   icons: {

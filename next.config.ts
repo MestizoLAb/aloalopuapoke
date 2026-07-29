@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Gestiamo noi i redirect con/senza slash finale, così le vecchie URL
+  // WordPress (es. /info/) arrivano a destinazione in UN SOLO hop.
+  skipTrailingSlashRedirect: true,
   images: {
     formats: ["image/avif", "image/webp"],
     // Fase di anteprima: niente cache lunga sulle immagini ottimizzate,
@@ -35,6 +38,12 @@ const nextConfig: NextConfig = {
       { source: "/sample-page/", destination: "/", permanent: true },
       { source: "/2022/:path*", destination: "/", permanent: true },
       { source: "/category/:path*", destination: "/", permanent: true },
+      // Normalizzazione slash finale (gestita da noi, un solo hop) → senza slash
+      { source: "/menu/", destination: "/menu", permanent: true },
+      { source: "/about/", destination: "/about", permanent: true },
+      { source: "/contatti/", destination: "/contatti", permanent: true },
+      { source: "/app/", destination: "/app", permanent: true },
+      { source: "/privacy/", destination: "/privacy", permanent: true },
     ];
   },
 };
