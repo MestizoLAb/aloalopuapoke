@@ -8,7 +8,7 @@ export const info = {
   city: "40138 Bologna (BO)",
   phone: "+39 051 007 3289",
   phoneHref: "tel:+390510073289",
-  email: "aloalopuapoke@gmail.com",
+  email: "info@mestizo-lab.com",
   company: "ORDINE 33 S.R.L.",
   vat: "04382121202",
   maps: "https://maps.google.com/?q=Via+Filippo+Schiassi+32a+Bologna",

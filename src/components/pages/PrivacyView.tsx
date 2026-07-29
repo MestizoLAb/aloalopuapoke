@@ -27,7 +27,7 @@ const POLICY: Record<"it" | "en", Policy> = {
         p: [
           "Il Titolare del trattamento è ORDINE 33 S.R.L., con sede legale in Via Filippo Schiassi 32/a, 40138 Bologna (BO), Italia — C.F. e P.IVA 04382121202.",
           "Sito web di riferimento: aloalopuapoke.it.",
-          "Per qualsiasi richiesta relativa al trattamento dei dati personali è possibile scrivere a aloalopuapoke@gmail.com.",
+          "Per qualsiasi richiesta relativa al trattamento dei dati personali è possibile scrivere a info@mestizo-lab.com.",
         ],
       },
       {
@@ -104,7 +104,7 @@ const POLICY: Record<"it" | "en", Policy> = {
       {
         h: "",
         p: [
-          "Puoi esercitare i tuoi diritti scrivendo a aloalopuapoke@gmail.com. Risponderemo senza ingiustificato ritardo e comunque entro un mese.",
+          "Puoi esercitare i tuoi diritti scrivendo a info@mestizo-lab.com. Risponderemo senza ingiustificato ritardo e comunque entro un mese.",
         ],
       },
       {
@@ -133,7 +133,7 @@ const POLICY: Record<"it" | "en", Policy> = {
         p: [
           "The data controller is ORDINE 33 S.R.L., registered office at Via Filippo Schiassi 32/a, 40138 Bologna (BO), Italy — VAT and Tax Code 04382121202.",
           "Reference website: aloalopuapoke.it.",
-          "For any request regarding the processing of personal data you can write to aloalopuapoke@gmail.com.",
+          "For any request regarding the processing of personal data you can write to info@mestizo-lab.com.",
         ],
       },
       {
@@ -210,7 +210,7 @@ const POLICY: Record<"it" | "en", Policy> = {
       {
         h: "",
         p: [
-          "You can exercise your rights by writing to aloalopuapoke@gmail.com. We will respond without undue delay and in any case within one month.",
+          "You can exercise your rights by writing to info@mestizo-lab.com. We will respond without undue delay and in any case within one month.",
         ],
       },
       {
