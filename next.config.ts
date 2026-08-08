@@ -38,6 +38,11 @@ const nextConfig: NextConfig = {
       { source: "/sample-page/", destination: "/", permanent: true },
       { source: "/2022/:path*", destination: "/", permanent: true },
       { source: "/category/:path*", destination: "/", permanent: true },
+      // Vecchie sitemap WordPress/Yoast → sitemap nuova (elimina i 404 su GSC)
+      { source: "/sitemap_index.xml", destination: "/sitemap.xml", permanent: true },
+      { source: "/page-sitemap.xml", destination: "/sitemap.xml", permanent: true },
+      { source: "/post-sitemap.xml", destination: "/sitemap.xml", permanent: true },
+      { source: "/category-sitemap.xml", destination: "/sitemap.xml", permanent: true },
       // Normalizzazione slash finale (gestita da noi, un solo hop) → senza slash
       { source: "/menu/", destination: "/menu", permanent: true },
       { source: "/about/", destination: "/about", permanent: true },
