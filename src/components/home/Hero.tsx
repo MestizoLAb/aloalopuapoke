@@ -105,12 +105,9 @@ export default function Hero() {
   useEffect(() => {
     const header = document.querySelector("header");
     if (!header) return;
-    // Altezza-schermo intera solo da desktop (lg): su mobile la hero segue il
-    // contenuto, così la foto ha spazio e non viene schiacciata.
-    const update = () =>
-      setHeroMinH(
-        window.innerWidth >= 1024 ? `calc(100dvh - ${header.offsetHeight}px)` : ""
-      );
+    // Hero = esattamente una schermata (anche su mobile): tutto visibile
+    // senza scrollare. Il contenuto interno è compresso per farci stare foto+testo.
+    const update = () => setHeroMinH(`calc(100dvh - ${header.offsetHeight}px)`);
     update();
     const ro = new ResizeObserver(update);
     ro.observe(header);
@@ -182,7 +179,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex flex-col gap-2.5 overflow-hidden bg-cream px-3 py-3 sm:gap-3 sm:px-5 sm:py-4 lg:min-h-[calc(100dvh-6.5rem)]"
+      className="relative flex min-h-[calc(100dvh-6.5rem)] flex-col gap-2 overflow-hidden bg-cream px-3 py-2.5 sm:gap-3 sm:px-5 sm:py-4"
       style={{ minHeight: heroMinH || undefined }}
     >
       {/* Striscia superiore (verde) */}
@@ -204,7 +201,7 @@ export default function Hero() {
 
       {/* Carosello */}
       <div
-        className="relative mx-auto h-[45rem] w-full max-w-7xl overflow-hidden rounded-2xl shadow-[0_26px_60px_-42px_rgba(20,41,31,0.55)] sm:h-[48rem] lg:h-auto lg:flex-1"
+        className="relative mx-auto w-full max-w-7xl flex-1 overflow-hidden rounded-2xl shadow-[0_26px_60px_-42px_rgba(20,41,31,0.55)]"
         style={{ backgroundColor: PANEL_BG }}
         onMouseEnter={() => (paused.current = true)}
         onMouseLeave={() => (paused.current = false)}
@@ -227,35 +224,35 @@ export default function Hero() {
               <div key={i} className="h-full w-full shrink-0" aria-hidden={i !== pos}>
                 <div className="flex h-full w-full flex-col lg:flex-row lg:items-stretch">
                   {/* Testo (NON è un heading: l'H1 della pagina è la fascia money sotto) */}
-                  <div className="flex w-full flex-1 items-center px-6 py-7 sm:px-9 sm:py-8 lg:w-[45%] lg:flex-none lg:py-12 lg:pl-12 lg:pr-8">
+                  <div className="flex w-full items-center px-5 py-4 sm:px-9 sm:py-8 lg:w-[45%] lg:py-12 lg:pl-12 lg:pr-8">
                     <div className="max-w-md">
                       <div>
-                        <span className="script block text-[1.4rem] leading-[1.1] text-forest-mid sm:text-[1.7rem]">
+                        <span className="script block text-[1.15rem] leading-[1.1] text-forest-mid sm:text-[1.7rem]">
                           {s.eyebrow}
                         </span>
-                        <span className="display-caps mt-1 block text-[2.2rem] leading-[0.98] text-ink sm:text-[3.3rem]">
+                        <span className="display-caps mt-0.5 block text-[1.75rem] leading-[0.98] text-ink sm:mt-1 sm:text-[3.3rem]">
                           {s.title}
                         </span>
-                        <span className={`script block text-[2.05rem] leading-[1.02] tracking-[0.03em] sm:text-[2.9rem] ${s.accentClass}`}>
+                        <span className={`script block text-[1.6rem] leading-[1.02] tracking-[0.03em] sm:text-[2.9rem] ${s.accentClass}`}>
                           {s.accent}
                         </span>
                       </div>
-                      <div className={`mt-5 rounded-lg border ${s.frameBorder} ${s.frameBg} px-4 py-3`}>
-                        <p className="text-[0.95rem] leading-relaxed text-ink-mid sm:text-base">
+                      <div className={`mt-3 rounded-lg border sm:mt-5 ${s.frameBorder} ${s.frameBg} px-3.5 py-2 sm:px-4 sm:py-3`}>
+                        <p className="text-[0.82rem] leading-snug text-ink-mid sm:text-base sm:leading-relaxed">
                           {s.lead}
                         </p>
                       </div>
                       {s.storeButtons ? (
-                        <div className="mt-6">
+                        <div className="mt-3.5 sm:mt-6">
                           {s.storePhrase && (
-                            <p className="mb-3 max-w-xs text-[0.9rem] font-semibold text-ink-mid">
+                            <p className="mb-2 max-w-xs text-[0.8rem] font-semibold leading-snug text-ink-mid sm:mb-3 sm:text-[0.9rem]">
                               {s.storePhrase}
                             </p>
                           )}
                           <StoreButtons dark />
                         </div>
                       ) : (
-                        <Link href={s.href} className="btn btn-outline mt-6">
+                        <Link href={s.href} className="btn btn-outline mt-4 sm:mt-6">
                           {s.cta}
                         </Link>
                       )}
@@ -263,7 +260,7 @@ export default function Hero() {
                   </div>
 
                   {/* Foto */}
-                  <div className="relative h-72 w-full sm:h-80 lg:h-auto lg:w-[55%] lg:flex-none">
+                  <div className="relative w-full flex-1 min-h-[180px] lg:h-auto lg:w-[55%] lg:flex-none">
                     <Image
                       src={s.img}
                       alt=""
