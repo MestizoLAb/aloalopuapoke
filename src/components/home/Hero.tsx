@@ -105,7 +105,12 @@ export default function Hero() {
   useEffect(() => {
     const header = document.querySelector("header");
     if (!header) return;
-    const update = () => setHeroMinH(`calc(100dvh - ${header.offsetHeight}px)`);
+    // Altezza-schermo intera solo da desktop (lg): su mobile la hero segue il
+    // contenuto, così la foto ha spazio e non viene schiacciata.
+    const update = () =>
+      setHeroMinH(
+        window.innerWidth >= 1024 ? `calc(100dvh - ${header.offsetHeight}px)` : ""
+      );
     update();
     const ro = new ResizeObserver(update);
     ro.observe(header);
@@ -177,7 +182,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex min-h-[calc(100dvh-6.5rem)] flex-col gap-2.5 overflow-hidden bg-cream px-3 py-3 sm:gap-3 sm:px-5 sm:py-4"
+      className="relative flex flex-col gap-2.5 overflow-hidden bg-cream px-3 py-3 sm:gap-3 sm:px-5 sm:py-4 lg:min-h-[calc(100dvh-6.5rem)]"
       style={{ minHeight: heroMinH || undefined }}
     >
       {/* Striscia superiore (verde) */}
@@ -199,7 +204,7 @@ export default function Hero() {
 
       {/* Carosello */}
       <div
-        className="relative mx-auto w-full max-w-7xl flex-1 overflow-hidden rounded-2xl shadow-[0_26px_60px_-42px_rgba(20,41,31,0.55)]"
+        className="relative mx-auto h-[45rem] w-full max-w-7xl overflow-hidden rounded-2xl shadow-[0_26px_60px_-42px_rgba(20,41,31,0.55)] sm:h-[48rem] lg:h-auto lg:flex-1"
         style={{ backgroundColor: PANEL_BG }}
         onMouseEnter={() => (paused.current = true)}
         onMouseLeave={() => (paused.current = false)}
@@ -222,7 +227,7 @@ export default function Hero() {
               <div key={i} className="h-full w-full shrink-0" aria-hidden={i !== pos}>
                 <div className="flex h-full w-full flex-col lg:flex-row lg:items-stretch">
                   {/* Testo (NON è un heading: l'H1 della pagina è la fascia money sotto) */}
-                  <div className="flex w-full items-center px-6 py-7 sm:px-9 sm:py-8 lg:w-[45%] lg:py-12 lg:pl-12 lg:pr-8">
+                  <div className="flex w-full flex-1 items-center px-6 py-7 sm:px-9 sm:py-8 lg:w-[45%] lg:flex-none lg:py-12 lg:pl-12 lg:pr-8">
                     <div className="max-w-md">
                       <div>
                         <span className="script block text-[1.4rem] leading-[1.1] text-forest-mid sm:text-[1.7rem]">
@@ -258,7 +263,7 @@ export default function Hero() {
                   </div>
 
                   {/* Foto */}
-                  <div className="relative min-h-[220px] w-full flex-1 lg:h-auto lg:w-[55%] lg:flex-none">
+                  <div className="relative h-72 w-full sm:h-80 lg:h-auto lg:w-[55%] lg:flex-none">
                     <Image
                       src={s.img}
                       alt=""
