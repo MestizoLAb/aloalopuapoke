@@ -81,7 +81,7 @@ export default function HomePage() {
 
           {/* Telefono — più grande */}
           <div className="order-1 flex justify-center lg:order-2">
-            <div className="relative h-[270px] w-[176px] sm:h-[460px] sm:w-[300px] lg:h-[540px] lg:w-[350px]">
+            <div className="relative h-[330px] w-[214px] sm:h-[460px] sm:w-[300px] lg:h-[540px] lg:w-[350px]">
               <Image
                 src="/img/app-mockup-green.png"
                 alt={it ? "App AloAlo Pua Poke sul telefono" : "AloAlo Pua Poke app on a phone"}
