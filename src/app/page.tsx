@@ -55,33 +55,33 @@ export default function HomePage() {
       </section>
 
       {/* Momento app — −10%, enfatizzato */}
-      <section className="relative overflow-hidden bg-lagoon-deep py-14 text-white sm:py-20">
+      <section className="relative overflow-hidden bg-lagoon-deep py-8 text-white sm:py-20">
         <div className="dot-grid pointer-events-none absolute inset-0 opacity-40" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-8 px-5 sm:px-8 lg:grid-cols-2 lg:gap-14">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-5 px-5 sm:gap-8 sm:px-8 lg:grid-cols-2 lg:gap-14">
           {/* Testo */}
           <div className="order-2 lg:order-1">
-            <p className="script text-[1.5rem] text-gold-soft sm:text-[1.85rem]">
+            <p className="script text-[1.3rem] text-gold-soft sm:text-[1.85rem]">
               {it ? "Scarica l’app AloAlo" : "Get the AloAlo app"}
             </p>
-            <h2 className="display-caps mt-1 flex flex-wrap items-baseline gap-x-3 text-[1.7rem] leading-[1] sm:text-[2.4rem]">
+            <h2 className="display-caps mt-1 flex flex-wrap items-baseline gap-x-3 text-[1.5rem] leading-[1] sm:text-[2.4rem]">
               <span className="font-display text-[2.6em] font-black leading-none tracking-tight text-gold-soft">
                 −10%
               </span>
               <span>{it ? "sul primo ordine" : "on your first order"}</span>
             </h2>
-            <p className="mt-4 max-w-md text-base leading-relaxed text-white/85 sm:text-lg">
+            <p className="mt-3 max-w-md text-[0.9rem] leading-snug text-white/85 sm:mt-4 sm:text-lg sm:leading-relaxed">
               {it
                 ? "Ordini in un tap, ritrovi le tue bowl preferite e accumuli punti a ogni ordine. E ordinando diretto aiuti noi: meno commissioni, più cura negli ingredienti."
                 : "Order in a tap, find your favourite bowls again and earn points on every order. Ordering direct helps us too: fewer fees, more care in the ingredients."}
             </p>
-            <div className="mt-7">
+            <div className="mt-4 sm:mt-7">
               <StoreButtons />
             </div>
           </div>
 
           {/* Telefono — più grande */}
           <div className="order-1 flex justify-center lg:order-2">
-            <div className="relative h-[340px] w-[220px] sm:h-[460px] sm:w-[300px] lg:h-[540px] lg:w-[350px]">
+            <div className="relative h-[270px] w-[176px] sm:h-[460px] sm:w-[300px] lg:h-[540px] lg:w-[350px]">
               <Image
                 src="/img/app-mockup-green.png"
                 alt={it ? "App AloAlo Pua Poke sul telefono" : "AloAlo Pua Poke app on a phone"}
