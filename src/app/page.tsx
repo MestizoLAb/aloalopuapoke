@@ -55,9 +55,9 @@ export default function HomePage() {
       </section>
 
       {/* Momento app — −10%, enfatizzato */}
-      <section className="relative overflow-hidden bg-lagoon-deep py-8 text-white sm:py-20">
+      <section className="relative overflow-hidden bg-lagoon-deep py-6 text-white sm:py-20">
         <div className="dot-grid pointer-events-none absolute inset-0 opacity-40" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-5 px-5 sm:gap-8 sm:px-8 lg:grid-cols-2 lg:gap-14">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-4 px-5 sm:gap-8 sm:px-8 lg:grid-cols-2 lg:gap-14">
           {/* Testo */}
           <div className="order-2 lg:order-1">
             <p className="script text-[1.3rem] text-gold-soft sm:text-[1.85rem]">
@@ -69,19 +69,19 @@ export default function HomePage() {
               </span>
               <span>{it ? "sul primo ordine" : "on your first order"}</span>
             </h2>
-            <p className="mt-3 max-w-md text-[0.9rem] leading-snug text-white/85 sm:mt-4 sm:text-lg sm:leading-relaxed">
+            <p className="mt-2.5 max-w-md text-[0.85rem] leading-snug text-white/85 sm:mt-4 sm:text-lg sm:leading-relaxed">
               {it
                 ? "Ordini in un tap, ritrovi le tue bowl preferite e accumuli punti a ogni ordine. E ordinando diretto aiuti noi: meno commissioni, più cura negli ingredienti."
                 : "Order in a tap, find your favourite bowls again and earn points on every order. Ordering direct helps us too: fewer fees, more care in the ingredients."}
             </p>
-            <div className="mt-4 sm:mt-7">
+            <div className="mt-3 sm:mt-7">
               <StoreButtons />
             </div>
           </div>
 
           {/* Telefono — più grande */}
           <div className="order-1 flex justify-center lg:order-2">
-            <div className="relative h-[330px] w-[214px] sm:h-[460px] sm:w-[300px] lg:h-[540px] lg:w-[350px]">
+            <div className="relative h-[380px] w-[247px] sm:h-[460px] sm:w-[300px] lg:h-[540px] lg:w-[350px]">
               <Image
                 src="/img/app-mockup-green.png"
                 alt={it ? "App AloAlo Pua Poke sul telefono" : "AloAlo Pua Poke app on a phone"}
