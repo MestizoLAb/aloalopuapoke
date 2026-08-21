@@ -171,7 +171,7 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
     note: { it: "Reg 4 · Lg 5 · XL 6", en: "Reg 4 · Lg 5 · XL 6" },
     options: [
       { it: "Avocado (+0,50€)", en: "Avocado (+€0.50)" },
-      { it: "Cipolla rossa marinata", en: "Marinated red onion" },
+      { it: "Cipolla rossa", en: "Red onion" },
       { it: "Pomodorini", en: "Cherry tomatoes" },
       { it: "Mais", en: "Sweetcorn" },
       { it: "Feta", en: "Feta" },
