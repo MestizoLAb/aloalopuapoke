@@ -185,7 +185,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
       { it: "Ravanelli", en: "Radish" },
       { it: "Alga wakame", en: "Wakame seaweed" },
       { it: "Mango", en: "Mango" },
-      { it: "Frutto di stagione", en: "Seasonal fruit" },
       { it: "Tobiko (+1€)", en: "Tobiko (+€1)" },
       { it: "Ananas", en: "Pineapple" },
       { it: "Papaya (+0,50€)", en: "Papaya (+€0.50)" },
