@@ -538,6 +538,8 @@ export const menu: MenuCategory[] = [
               { it: "Burro di arachidi", en: "Peanut butter" },
               { it: "Nutella", en: "Nutella" },
               { it: "Mango", en: "Mango" },
+              { it: "Frutti di bosco e arachidi croccante (+0,50€)", en: "Mixed berries & crunchy peanuts (+€0.50)" },
+              { it: "Burro di arachidi e Nutella con granola al cioccolato e arachidi tostate (+0,50€)", en: "Peanut butter & Nutella with chocolate granola & toasted peanuts (+€0.50)" },
             ],
           },
         ],
