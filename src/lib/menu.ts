@@ -144,7 +144,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
       { it: "Marinatura naturale", en: "Natural marinade" },
       { it: "Olio e scorza di lime", en: "Oil & lime zest" },
       { it: "Olio, lime e pepe rosa", en: "Oil, lime & pink pepper" },
-      { it: "Soia gluten free", en: "Gluten-free soy" },
     ],
   },
   {
