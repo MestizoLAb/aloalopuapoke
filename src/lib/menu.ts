@@ -117,7 +117,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
     options: [
       { it: "Tonno", en: "Tuna" },
       { it: "Salmone", en: "Salmon" },
-      { it: "Gambero", en: "Prawn" },
       { it: "Pollo", en: "Chicken" },
       { it: "Tofu", en: "Tofu" },
       { it: "Pulled pork", en: "Pulled pork" },
@@ -362,12 +361,12 @@ export const menu: MenuCategory[] = [
         id: "ceviche",
         name: { it: "Ceviche", en: "Ceviche" },
         desc: {
-          it: "Gamberi, avocado, cetriolo, mango, jalapeño, cipolla rossa, coriandolo, limone, sale, pomodoro e tortilla chips.",
-          en: "Prawns, avocado, cucumber, mango, jalapeño, red onion, coriander, lemon, salt, tomato and tortilla chips.",
+          it: "Gamberi, avocado, cetriolo, mango, jalapeño, cipolla rossa, coriandolo, limone, pomodoro e tortilla chips.",
+          en: "Prawns, avocado, cucumber, mango, jalapeño, red onion, coriander, lemon, tomato and tortilla chips.",
         },
         sizes: [
           { label: "Individuale", price: "6,00" },
-          { label: "Da condividere", price: "12,00" },
+          { label: "Da condividere", price: "16,00" },
         ],
         img: "/img/ceviche.jpg",
         tags: ["raw"],
@@ -399,7 +398,6 @@ export const menu: MenuCategory[] = [
             options: [
               { it: "Salmone", en: "Salmon" },
               { it: "Tonno", en: "Tuna" },
-              { it: "Code di gamberi", en: "Prawn tails" },
             ],
           },
           {
@@ -538,7 +536,8 @@ export const menu: MenuCategory[] = [
               { it: "Burro di arachidi", en: "Peanut butter" },
               { it: "Nutella", en: "Nutella" },
               { it: "Mango", en: "Mango" },
-              { it: "Frutti di bosco e arachidi croccante (+0,50€)", en: "Mixed berries & crunchy peanuts (+€0.50)" },
+              { it: "Pesca", en: "Peach" },
+              { it: "Frutti di bosco, burro di arachidi e arachidi croccanti (+0,50€)", en: "Mixed berries, peanut butter & crunchy peanuts (+€0.50)" },
               { it: "Burro di arachidi e Nutella con granola al cioccolato e arachidi tostate (+0,50€)", en: "Peanut butter & Nutella with chocolate granola & toasted peanuts (+€0.50)" },
             ],
           },
