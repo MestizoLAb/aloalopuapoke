@@ -63,9 +63,6 @@ function slides(lang: "it" | "en"): Slide[] {
       cta: t.ambiente.cta,
       href: "/about",
       objPos: "50% 62%",
-      caption: it
-        ? "Locale in fase di rinnovamento: immagini puramente indicative del progetto."
-        : "Venue under renovation: images are purely indicative of the project.",
     },
     {
       img: "/img/fusion.jpg",

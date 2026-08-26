@@ -36,13 +36,6 @@ export default function AboutView() {
                 className="object-cover"
                 style={{ objectPosition: "50% 62%" }}
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 via-ink/45 to-transparent px-5 pb-4 pt-10">
-                <p className="text-[0.78rem] font-medium leading-snug text-white/90">
-                  {lang === "it"
-                    ? "Locale in fase di rinnovamento: immagini puramente indicative del progetto."
-                    : "Venue under renovation: images are purely indicative of the project."}
-                </p>
-              </div>
             </div>
           </Reveal>
           <Reveal className="max-w-lg">
