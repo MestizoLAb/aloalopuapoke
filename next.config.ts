@@ -19,6 +19,13 @@ const nextConfig: NextConfig = {
           { key: "Cache-Control", value: "no-store, must-revalidate" },
         ],
       },
+      {
+        // Schermi TV del locale (signage): raggiungibili via URL ma non indicizzati.
+        source: "/tv/:path*",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+        ],
+      },
     ];
   },
   async redirects() {
