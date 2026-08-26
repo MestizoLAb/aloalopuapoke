@@ -294,7 +294,7 @@ export const menu: MenuCategory[] = [
   {
     id: "tapas",
     kind: "single",
-    title: { it: "Tapas", en: "Tapas" },
+    title: { it: "Da stuzzicare e condividere", en: "To nibble & share" },
     intro: {
       it: "Da condividere, o da aggiungere alla tua bowl.",
       en: "To share, or to add to your bowl.",

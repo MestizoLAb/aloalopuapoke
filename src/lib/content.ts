@@ -137,7 +137,7 @@ const it = {
   menuPage: {
     eyebrow: "Menù",
     title: "Il nostro menù",
-    lead: "Poke firmati o creati da te, avotoast, tartare, tapas e dolci fatti in casa. Per allergie e intolleranze, chiedi pure a noi.",
+    lead: "Poke firmati o creati da te, avotoast, tartare, stuzzichini e dolci fatti in casa. Per allergie e intolleranze, chiedi pure a noi.",
     regular: "Regular",
     large: "Large",
     from: "da",
@@ -303,7 +303,7 @@ const en: typeof it = {
   menuPage: {
     eyebrow: "Menu",
     title: "Our menu",
-    lead: "Signature or build-your-own pokes, avotoast, tartare, tapas and homemade desserts. For allergies and intolerances, just ask us.",
+    lead: "Signature or build-your-own pokes, avotoast, tartare, small plates and homemade desserts. For allergies and intolerances, just ask us.",
     regular: "Regular",
     large: "Large",
     from: "from",

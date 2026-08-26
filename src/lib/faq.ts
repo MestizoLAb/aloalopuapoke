@@ -45,7 +45,7 @@ export const faqIt: Faq[] = [
   },
   {
     q: "Oltre alle poke, cos’altro posso ordinare da Alo Alo?",
-    a: "Parecchio, se hai voglia di variare o ordinate in più persone con gusti diversi. Da Alo Alo Pua Pokè trovi avotoast (10–12€), la tartare da comporre (15€), tapas da condividere come il trio di polpette con salsa thai, i Poke Nachos e il ceviche, yogurt fruit bowl e dolci. I Poke Nachos nascono dall’incontro con La Frida.",
+    a: "Parecchio, se hai voglia di variare o ordinate in più persone con gusti diversi. Da Alo Alo Pua Pokè trovi avotoast (10–12€), la tartare da comporre (15€), stuzzichini da condividere come il trio di polpette con salsa thai, i Poke Nachos e il ceviche, yogurt fruit bowl e dolci. I Poke Nachos nascono dall’incontro con La Frida.",
   },
 ];
 
@@ -88,6 +88,6 @@ export const faqEn: Faq[] = [
   },
   {
     q: "Besides poke, what else can I order from Alo Alo?",
-    a: "Plenty, if you fancy variety or you’re ordering with different tastes. At Alo Alo Pua Pokè you’ll find avotoast (€10–12), build-your-own tartare (€15), tapas to share like the trio of bites with thai sauce, Poke Nachos and ceviche, yogurt fruit bowls and desserts. Poke Nachos were born from meeting La Frida.",
+    a: "Plenty, if you fancy variety or you’re ordering with different tastes. At Alo Alo Pua Pokè you’ll find avotoast (€10–12), build-your-own tartare (€15), small plates to share like the trio of bites with thai sauce, Poke Nachos and ceviche, yogurt fruit bowls and desserts. Poke Nachos were born from meeting La Frida.",
   },
 ];
