@@ -125,7 +125,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
       { it: "Gambero cotto", en: "Cooked prawn" },
       { it: "Uovo sodo", en: "Boiled egg" },
       { it: "Polpetta veg quinoa e raparossa", en: "Veg quinoa & beetroot ball" },
-      { it: "Frittatine di verdure", en: "Veg fritters" },
       { it: "Polpettine green spinaci e piselli", en: "Green spinach & pea balls" },
       { it: "Polpette salmone, patata ed erba cipollina", en: "Salmon, potato & chive balls" },
       { it: "Pollo glassato teriyaki", en: "Teriyaki-glazed chicken" },
@@ -210,7 +209,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
       { it: "Noci", en: "Walnuts" },
       { it: "Mandorle", en: "Almonds" },
       { it: "Alga nori", en: "Nori seaweed" },
-      { it: "Quinoa soffiata", en: "Puffed quinoa" },
       { it: "Arachidi", en: "Peanuts" },
       { it: "Chips di patata dolce (+0,50€)", en: "Sweet potato chips (+€0.50)" },
     ],
@@ -467,16 +465,6 @@ export const menu: MenuCategory[] = [
       en: "A sweet, homemade finish.",
     },
     dishes: [
-      {
-        id: "tortino-cioccolato",
-        name: { it: "Tortino al cioccolato", en: "Chocolate fondant" },
-        desc: {
-          it: "Tortino al cioccolato con cuore morbido di Nutella. Porzione singola.",
-          en: "Chocolate fondant with a soft, melting Nutella heart. Single portion.",
-        },
-        price: "5,00",
-        img: "/img/tortino-cioccolato.jpg",
-      },
       {
         id: "yogurt-bowl",
         name: { it: "Yogurt Bowl", en: "Yogurt Bowl" },
