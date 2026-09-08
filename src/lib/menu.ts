@@ -85,7 +85,7 @@ export const signatureBowls: Dish[] = [
     id: "nature",
     name: { it: "Pokè Nature", en: "Nature Pokè" },
     desc: {
-      it: "Lattuga, tofu, salsa thai peanuts, pomodorini, avocado, carote, edamame, cavolo rosso e mandorle.",
+      it: "Lattuga, tofu, salsa thaipeanuts, pomodorini, avocado, carote, edamame, cavolo rosso e mandorle.",
       en: "Lettuce, tofu, thai peanut sauce, cherry tomatoes, avocado, carrots, edamame, red cabbage and almonds.",
     },
     img: "/img/poke-nature.jpg",
