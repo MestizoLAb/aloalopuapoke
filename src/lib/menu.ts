@@ -508,11 +508,20 @@ export const menu: MenuCategory[] = [
         ],
       },
       {
+        id: "cinnamon-roll",
+        name: { it: "Cinnamon roll", en: "Cinnamon roll" },
+        desc: {
+          it: "Lievitato a spirale con cannella e glassa.",
+          en: "Cinnamon spiral pastry with icing.",
+        },
+        price: "3,50",
+      },
+      {
         id: "cheesecake",
         name: { it: "Cheesecake", en: "Cheesecake" },
         desc: {
-          it: "Cheesecake cremosa fatta in casa, porzione singola. Scegli il gusto.",
-          en: "Creamy homemade cheesecake, single portion. Choose your flavour.",
+          it: "Cheesecake cremosa fatta in casa, servita con nachos dolci. Scegli il gusto.",
+          en: "Creamy homemade cheesecake, served with sweet nachos. Choose your flavour.",
         },
         price: "5,00",
         img: "/img/cheesecake.jpg",
