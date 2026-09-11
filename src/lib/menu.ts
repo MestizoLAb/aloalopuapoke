@@ -170,7 +170,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
     note: { it: "Reg 4 · Lg 5 · XL 6", en: "Reg 4 · Lg 5 · XL 6" },
     options: [
       { it: "Avocado (+0,50€)", en: "Avocado (+€0.50)" },
-      { it: "Cipolla rossa", en: "Red onion" },
       { it: "Cipolla marinata", en: "Marinated onion" },
       { it: "Pomodorini", en: "Cherry tomatoes" },
       { it: "Mais", en: "Sweetcorn" },
@@ -190,7 +189,6 @@ export const builderSteps: { n: number; title: Bi; note?: Bi; options: Bi[] }[] 
       { it: "Papaya (+0,50€)", en: "Papaya (+€0.50)" },
       { it: "Spinacino", en: "Baby spinach" },
       { it: "Jalapeño piccante", en: "Spicy jalapeño" },
-      { it: "Burrata (+1€)", en: "Burrata (+€1)" },
       { it: "Carote", en: "Carrots" },
       { it: "Patata dolce", en: "Sweet potato" },
       { it: "Rucola", en: "Rocket" },
@@ -266,17 +264,6 @@ export const menu: MenuCategory[] = [
         },
         price: "11,00",
         img: "/img/avotoast-chicken.jpg",
-      },
-      {
-        id: "avo-fish",
-        name: { it: "AvoToast Fish", en: "Fish AvoToast" },
-        desc: {
-          it: "Pane d’orzo, avocado, tataki di tonno, cipolla rossa, mango e semi di chia.",
-          en: "Barley bread, avocado, tuna tataki, red onion, mango and chia seeds.",
-        },
-        price: "12,00",
-        img: "/img/avotoast-fish.jpg",
-        tags: ["raw"],
       },
       {
         id: "avo-passion",
