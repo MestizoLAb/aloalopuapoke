@@ -276,6 +276,16 @@ export const menu: MenuCategory[] = [
         img: "/img/avotoast-passion.jpg",
         tags: ["raw", "new"],
       },
+      {
+        id: "avo-mestizo",
+        name: { it: "AvoToast Mestizò Lab", en: "Mestizò Lab AvoToast" },
+        desc: {
+          it: "Insalata di cavolo rosso e carote tipo americana (coleslaw), pulled pork, ananas alla piastra e cipolla marinata.",
+          en: "American-style red cabbage & carrot slaw, pulled pork, grilled pineapple and marinated onion.",
+        },
+        price: "12,00",
+        tags: ["new"],
+      },
     ],
   },
   {
@@ -496,10 +506,10 @@ export const menu: MenuCategory[] = [
       },
       {
         id: "cinnamon-roll",
-        name: { it: "Cinnamon roll", en: "Cinnamon roll" },
+        name: { it: "Sfornato del giorno", en: "Bake of the day" },
         desc: {
-          it: "Lievitato a spirale con cannella e glassa.",
-          en: "Cinnamon spiral pastry with icing.",
+          it: "I lievitati cambiano ogni giorno: cinnamon roll, concha messicana e altri.",
+          en: "The bakes change daily: cinnamon roll, Mexican concha and more.",
         },
         price: "3,50",
       },
