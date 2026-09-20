@@ -286,6 +286,7 @@ export const menu: MenuCategory[] = [
           en: "American-style red cabbage & carrot slaw, pulled pork, grilled pineapple and marinated onion.",
         },
         price: "12,00",
+        img: "/img/avotoast-mestizo.jpg",
         tags: ["new"],
       },
     ],
@@ -561,6 +562,7 @@ export const menu: MenuCategory[] = [
           en: "Tortilla, prawns with salt, pepper & garlic, guacamole and Mexican green sauce.",
         },
         price: "15,00",
+        img: "/img/tacos-gamberi.jpg",
         tags: ["new"],
       },
       {
