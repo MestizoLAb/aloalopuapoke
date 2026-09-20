@@ -25,6 +25,8 @@ export type MenuCategory = {
   intro: Bi;
   kind: "poke" | "single" | "drinks";
   dishes: Dish[];
+  /** Link opzionale a un sito esterno (es. La Frida → mestizo-lab.com). */
+  link?: { label: Bi; href: string };
 };
 
 /* ------------------------------------------------------------------
@@ -298,17 +300,6 @@ export const menu: MenuCategory[] = [
     },
     dishes: [
       {
-        id: "guacamole",
-        name: { it: "Guacamole & nachos", en: "Guacamole & nachos" },
-        desc: {
-          it: "Guacamole fresco con nachos di mais.",
-          en: "Fresh guacamole with corn nachos.",
-        },
-        price: "4,00",
-        img: "/img/guacamole.png",
-        tags: ["veg"],
-      },
-      {
         id: "hummus-tapas",
         name: { it: "Hummus di ceci & nachos", en: "Chickpea hummus & nachos" },
         desc: {
@@ -353,20 +344,6 @@ export const menu: MenuCategory[] = [
           { label: "Da condividere", price: "18,00" },
         ],
         img: "/img/poke-nachos.jpg",
-      },
-      {
-        id: "ceviche",
-        name: { it: "Ceviche", en: "Ceviche" },
-        desc: {
-          it: "Gamberi, avocado, cetriolo, mango, jalapeño, cipolla rossa, coriandolo, limone, pomodoro e tortilla chips.",
-          en: "Prawns, avocado, cucumber, mango, jalapeño, red onion, coriander, lemon, tomato and tortilla chips.",
-        },
-        sizes: [
-          { label: "Individuale", price: "6,00" },
-          { label: "Da condividere", price: "16,00" },
-        ],
-        img: "/img/ceviche.jpg",
-        tags: ["raw"],
       },
     ],
   },
@@ -535,6 +512,66 @@ export const menu: MenuCategory[] = [
             ],
           },
         ],
+      },
+    ],
+  },
+  {
+    id: "lafrida",
+    kind: "single",
+    title: { it: "La Frida · Cucina messicana", en: "La Frida · Mexican kitchen" },
+    intro: {
+      it: "La cucina messicana della famiglia Mestizo Lab, nello stesso locale: piatti da condividere e novità dal Messico.",
+      en: "The Mexican kitchen of the Mestizo Lab family, in the same venue: sharing plates and Mexican specials.",
+    },
+    link: {
+      label: { it: "Scopri La Frida su Mestizo Lab", en: "Discover La Frida on Mestizo Lab" },
+      href: "https://mestizo-lab.com/la-frida",
+    },
+    dishes: [
+      {
+        id: "guacamole",
+        name: { it: "Guacamole & nachos", en: "Guacamole & nachos" },
+        desc: {
+          it: "Guacamole fresco con nachos di mais.",
+          en: "Fresh guacamole with corn nachos.",
+        },
+        price: "4,00",
+        img: "/img/guacamole.png",
+        tags: ["veg"],
+      },
+      {
+        id: "ceviche",
+        name: { it: "Ceviche", en: "Ceviche" },
+        desc: {
+          it: "Gamberi, avocado, cetriolo, mango, jalapeño, cipolla rossa, coriandolo, limone, pomodoro e tortilla chips.",
+          en: "Prawns, avocado, cucumber, mango, jalapeño, red onion, coriander, lemon, tomato and tortilla chips.",
+        },
+        sizes: [
+          { label: "Individuale", price: "6,00" },
+          { label: "Da condividere", price: "16,00" },
+        ],
+        img: "/img/ceviche.jpg",
+        tags: ["raw"],
+      },
+      {
+        id: "tacos-gamberi",
+        name: { it: "Tacos di gamberi", en: "Prawn tacos" },
+        desc: {
+          it: "Tortilla, gamberi sale pepe e aglio, guacamole e salsa verde messicana.",
+          en: "Tortilla, prawns with salt, pepper & garlic, guacamole and Mexican green sauce.",
+        },
+        price: "15,00",
+        tags: ["new"],
+      },
+      {
+        id: "tostada-tonno",
+        name: { it: "Tostada di tonno", en: "Tuna tostada" },
+        desc: {
+          it: "Tortilla croccante, guacamole e insalata messicana di tonno.",
+          en: "Crispy tortilla, guacamole and Mexican-style tuna salad.",
+        },
+        price: "10,00",
+        tags: ["raw", "new"],
       },
     ],
   },

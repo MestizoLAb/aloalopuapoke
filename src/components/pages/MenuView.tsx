@@ -39,6 +39,16 @@ export default function MenuView() {
             <p className="mt-2 text-sm leading-relaxed text-ink-mid">
               {cat.intro[lang]}
             </p>
+            {cat.link && (
+              <a
+                href={cat.link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-coral-deep underline decoration-coral-deep/40 underline-offset-2 hover:decoration-coral-deep"
+              >
+                {cat.link.label[lang]} →
+              </a>
+            )}
           </Reveal>
 
           {cat.kind === "drinks" ? (
