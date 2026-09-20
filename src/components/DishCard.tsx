@@ -67,6 +67,17 @@ export default function DishCard({ dish }: { dish: Dish; poke?: boolean }) {
           {dish.desc[lang]}
         </p>
 
+        {dish.link && (
+          <a
+            href={dish.link.href}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-coral-deep underline decoration-coral-deep/40 underline-offset-2 hover:decoration-coral-deep"
+          >
+            {dish.link.label[lang]} →
+          </a>
+        )}
+
         {dish.choices && (
           <div className="mt-3 space-y-2.5 border-t border-ink/8 pt-3">
             {dish.choices.map((g) => (

@@ -17,6 +17,8 @@ export type Dish = {
   ask?: boolean;
   img?: string;
   tags?: DishTag[];
+  /** Link opzionale (es. rimando a mestizo-lab.com). */
+  link?: { label: Bi; href: string };
 };
 
 export type MenuCategory = {
@@ -280,7 +282,7 @@ export const menu: MenuCategory[] = [
       },
       {
         id: "avo-mestizo",
-        name: { it: "AvoToast Mestizò Lab", en: "Mestizò Lab AvoToast" },
+        name: { it: "AvoToast Mestizo Lab", en: "Mestizo Lab AvoToast" },
         desc: {
           it: "Insalata di cavolo rosso e carote tipo americana (coleslaw), pulled pork, ananas alla piastra e cipolla marinata.",
           en: "American-style red cabbage & carrot slaw, pulled pork, grilled pineapple and marinated onion.",
@@ -288,6 +290,10 @@ export const menu: MenuCategory[] = [
         price: "12,00",
         img: "/img/avotoast-mestizo.jpg",
         tags: ["new"],
+        link: {
+          label: { it: "Scopri Mestizo Lab", en: "Discover Mestizo Lab" },
+          href: "https://mestizo-lab.com",
+        },
       },
     ],
   },
@@ -491,6 +497,10 @@ export const menu: MenuCategory[] = [
         },
         price: "3,50",
         img: "/img/sfornato.jpg",
+        link: {
+          label: { it: "Scopri Mestizo Lab", en: "Discover Mestizo Lab" },
+          href: "https://mestizo-lab.com",
+        },
       },
       {
         id: "cheesecake",
