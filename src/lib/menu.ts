@@ -490,6 +490,7 @@ export const menu: MenuCategory[] = [
           en: "The bakes change daily: cinnamon roll, Mexican concha and more.",
         },
         price: "3,50",
+        img: "/img/sfornato.jpg",
       },
       {
         id: "cheesecake",
