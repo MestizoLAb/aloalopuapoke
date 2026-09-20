@@ -573,6 +573,7 @@ export const menu: MenuCategory[] = [
           en: "Crispy tortilla, guacamole and Mexican-style tuna salad.",
         },
         price: "10,00",
+        img: "/img/tostada-tonno.jpg",
         tags: ["raw", "new"],
       },
     ],
