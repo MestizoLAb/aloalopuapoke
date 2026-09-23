@@ -9,7 +9,7 @@ export type Faq = { q: string; a: string };
 export const faqIt: Faq[] = [
   {
     q: "Dove posso ordinare poke a domicilio a Bologna?",
-    a: "Puoi ordinarlo da Alo Alo Pua Pokè, in Via Filippo Schiassi 32a a Bologna (zona Sant’Orsola–San Donato). Consegniamo a casa e in ufficio nel quartiere e dintorni, e facciamo anche asporto. Ordini dalla nostra app, dal sito aloalopuapoke.it, al telefono (051 007 3289) o su Just Eat.",
+    a: "Puoi ordinarlo da Alo Alo Pua Pokè, in Via Filippo Schiassi 32a a Bologna (zona Sant’Orsola–San Donato). Consegniamo a casa e in ufficio nel quartiere e dintorni, e facciamo anche asporto. Ordini dalla nostra app, dal sito aloalopuapoke.it, al telefono (051 006 8460) o su Just Eat.",
   },
   {
     q: "Quanto costa una poke da Alo Alo?",
@@ -52,7 +52,7 @@ export const faqIt: Faq[] = [
 export const faqEn: Faq[] = [
   {
     q: "Where can I order poke delivery in Bologna?",
-    a: "You can order it from Alo Alo Pua Pokè, at Via Filippo Schiassi 32a in Bologna (Sant’Orsola–San Donato area). We deliver to homes and offices in the neighbourhood and nearby, and we also do takeaway. Order from our app, from aloalopuapoke.it, by phone (051 007 3289) or on Just Eat.",
+    a: "You can order it from Alo Alo Pua Pokè, at Via Filippo Schiassi 32a in Bologna (Sant’Orsola–San Donato area). We deliver to homes and offices in the neighbourhood and nearby, and we also do takeaway. Order from our app, from aloalopuapoke.it, by phone (051 006 8460) or on Just Eat.",
   },
   {
     q: "How much does a poke cost at Alo Alo?",
