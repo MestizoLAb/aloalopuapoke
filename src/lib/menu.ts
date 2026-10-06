@@ -273,8 +273,8 @@ export const menu: MenuCategory[] = [
         id: "avo-passion",
         name: { it: "AvoToast Passion", en: "Passion AvoToast" },
         desc: {
-          it: "Pane d’orzo, avocado, spinacino, salmone marinato finocchietto e pepe rosa, passion fruit e sesamo.",
-          en: "Barley bread, avocado, baby spinach, wild fennel & pink-pepper marinated salmon, passion fruit and sesame.",
+          it: "Pane d’orzo, avocado, spinacino, salmone marinato finocchietto e pepe rosa, passion fruit, scaglie di cocco e sesamo.",
+          en: "Barley bread, avocado, baby spinach, wild fennel & pink-pepper marinated salmon, passion fruit, coconut flakes and sesame.",
         },
         price: "12,00",
         img: "/img/avotoast-passion.jpg",
