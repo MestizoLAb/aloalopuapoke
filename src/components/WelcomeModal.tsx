@@ -43,6 +43,8 @@ type Cuisine = {
   external: boolean;
   photo: string;
   logo: string;
+  logoW: number;
+  logoH: number;
   logoAlt: string;
   label: Bi;
   desc: Bi;
@@ -55,6 +57,8 @@ const cuisines: Cuisine[] = [
     external: false,
     photo: "/img/vfoto-poke.jpg",
     logo: "/img/logo-green.png",
+    logoW: 760,
+    logoH: 606,
     logoAlt: "Alo Alo Pua Pokè",
     label: { it: "Poke hawaiano", en: "Hawaiian poke" },
     desc: { it: "Bowl fresche, come vuoi tu.", en: "Fresh bowls, your way." },
@@ -65,6 +69,8 @@ const cuisines: Cuisine[] = [
     external: true,
     photo: "/img/vfoto-burger.jpg",
     logo: "/img/mestizo-lab-logo-green.png",
+    logoW: 620,
+    logoH: 363,
     logoAlt: "Mestizo Lab",
     label: { it: "Toast & burger", en: "Toast & burgers" },
     desc: { it: "Avocado toast, burger e brunch.", en: "Avocado toast, burgers and brunch." },
@@ -75,6 +81,8 @@ const cuisines: Cuisine[] = [
     external: true,
     photo: "/img/tacos-gamberi.jpg",
     logo: "/img/lafrida-logo.png",
+    logoW: 560,
+    logoH: 297,
     logoAlt: "La Frida · Cucina Messicana",
     label: { it: "Cucina messicana", en: "Mexican cuisine" },
     desc: { it: "Tacos, tostadas e dolci.", en: "Tacos, tostadas and sweets." },
@@ -202,9 +210,9 @@ export default function WelcomeModal() {
                     <Image
                       src={c.logo}
                       alt={c.logoAlt}
-                      width={620}
-                      height={360}
-                      className="h-8 w-auto"
+                      width={c.logoW}
+                      height={c.logoH}
+                      className="h-8 w-auto max-w-[70%] shrink-0 self-start object-contain sm:max-w-full sm:self-center"
                     />
                     <p className={`mt-1.5 text-xs font-semibold uppercase tracking-wide ${c.labelColor}`}>
                       {c.label[lang]}
