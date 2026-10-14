@@ -5,6 +5,7 @@ import { LangProvider } from "@/lib/i18n";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import WelcomeModal from "@/components/WelcomeModal";
 
 // Titoli — Fredoka: sans caldo e tondeggiante, sostituto web di "Skia" (brandbook AloAlo)
 const fredoka = Fredoka({
@@ -88,6 +89,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <CookieBanner />
+          <WelcomeModal />
         </LangProvider>
       </body>
     </html>
