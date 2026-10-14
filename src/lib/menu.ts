@@ -11,7 +11,7 @@ export type Dish = {
   price?: string;
   /** Prezzi per misura (es. poke firmati: Regular/Large/XL). */
   sizes?: { label: string; price: string }[];
-  /** Scelte per i "componi tu" (es. tartare): gruppi con opzioni. */
+  /** Scelte per i "componi tu" (es. yogurt bowl, cheesecake): gruppi con opzioni. */
   choices?: { group: Bi; options: Bi[] }[];
   /** true = prezzo da confermare in cassa. */
   ask?: boolean;
@@ -351,56 +351,6 @@ export const menu: MenuCategory[] = [
           { label: "Da condividere", price: "18,00" },
         ],
         img: "/img/poke-nachos.jpg",
-      },
-    ],
-  },
-  {
-    id: "tartare",
-    kind: "single",
-    title: { it: "Tartare", en: "Tartare" },
-    intro: {
-      it: "Il crudo, come piace a noi: fresco e agrumato.",
-      en: "Raw, our way: fresh and citrusy.",
-    },
-    dishes: [
-      {
-        id: "tartare-build",
-        name: { it: "Componi la tua tartare", en: "Build your own tartare" },
-        desc: {
-          it: "Tagliata al coltello e servita con nachos. Scegli proteina, marinatura e croccante.",
-          en: "Knife-cut and served with nachos. Choose protein, marinade and crunch.",
-        },
-        price: "15,00",
-        img: "/img/tartare.jpg",
-        tags: ["raw", "gf"],
-        choices: [
-          {
-            group: { it: "Proteina", en: "Protein" },
-            options: [
-              { it: "Salmone", en: "Salmon" },
-              { it: "Tonno", en: "Tuna" },
-            ],
-          },
-          {
-            group: { it: "Marinatura", en: "Marinade" },
-            options: [
-              { it: "Olio, sale e pepe", en: "Oil, salt & pepper" },
-              { it: "Soia, miele e zenzero", en: "Soy, honey & ginger" },
-            ],
-          },
-          {
-            group: { it: "Croccante", en: "Crunch" },
-            options: [
-              { it: "Noci", en: "Walnuts" },
-              { it: "Mandorle", en: "Almonds" },
-              { it: "Sesamo", en: "Sesame" },
-            ],
-          },
-          {
-            group: { it: "Extra", en: "Extra" },
-            options: [{ it: "Avocado (+0,50€)", en: "Avocado (+€0.50)" }],
-          },
-        ],
       },
     ],
   },

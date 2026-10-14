@@ -348,7 +348,7 @@ function Chevron({ dir }: { dir: "left" | "right" }) {
 }
 
 function marqueeItems() {
-  return ["Poke", "Avotoast", "Tartare", "Ceviche", "Poke Nachos", "Fruit bowl", "Aloha"];
+  return ["Poke", "Avotoast", "Burger", "Ceviche", "Poke Nachos", "Fruit bowl", "Aloha"];
 }
 
 const starColors = ["text-coral", "text-pink", "text-lagoon-soft", "text-gold-soft"];

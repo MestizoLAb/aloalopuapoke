@@ -60,7 +60,7 @@ const it = {
     items: [
       { name: "Poke Bowl", desc: "Base a scelta, pesce marinato, topping croccanti e le nostre salse." },
       { name: "Avotoast", desc: "Pane d’oro tostato, avocado cremoso e condimenti di mare o di terra." },
-      { name: "Tartare & Ceviche", desc: "Tonno e gambero crudi, agrumi e spezie: freschezza allo stato puro." },
+      { name: "Ceviche & Tostada", desc: "Tonno e gambero crudi, agrumi e spezie: freschezza allo stato puro." },
       { name: "Tapas & Bowl", desc: "Guacamole, hummus, alga wakame e fruit bowl per ogni momento." },
     ],
   },
@@ -137,7 +137,7 @@ const it = {
   menuPage: {
     eyebrow: "Menù",
     title: "Il nostro menù",
-    lead: "Poke firmati o creati da te, avotoast, tartare, stuzzichini e dolci fatti in casa. Per allergie e intolleranze, chiedi pure a noi.",
+    lead: "Poke firmati o creati da te, avotoast, stuzzichini e dolci fatti in casa. Per allergie e intolleranze, chiedi pure a noi.",
     regular: "Regular",
     large: "Large",
     from: "da",
@@ -226,7 +226,7 @@ const en: typeof it = {
     items: [
       { name: "Poke Bowl", desc: "Your base, marinated fish, crunchy toppings and our sauces." },
       { name: "Avotoast", desc: "Toasted golden bread, creamy avocado and sea or land toppings." },
-      { name: "Tartare & Ceviche", desc: "Raw tuna and prawn, citrus and spice: pure freshness." },
+      { name: "Ceviche & Tostada", desc: "Raw tuna and prawn, citrus and spice: pure freshness." },
       { name: "Tapas & Bowl", desc: "Guacamole, hummus, wakame and fruit bowl for any moment." },
     ],
   },
@@ -303,7 +303,7 @@ const en: typeof it = {
   menuPage: {
     eyebrow: "Menu",
     title: "Our menu",
-    lead: "Signature or build-your-own pokes, avotoast, tartare, small plates and homemade desserts. For allergies and intolerances, just ask us.",
+    lead: "Signature or build-your-own pokes, avotoast, small plates and homemade desserts. For allergies and intolerances, just ask us.",
     regular: "Regular",
     large: "Large",
     from: "from",
