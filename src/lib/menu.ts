@@ -314,7 +314,7 @@ export const menu: MenuCategory[] = [
           en: "Chickpea hummus with corn nachos.",
         },
         price: "6,00",
-        img: "/img/hummus.png",
+        img: "/img/hummus.jpg",
         tags: ["veg"],
       },
       {
@@ -382,7 +382,7 @@ export const menu: MenuCategory[] = [
           en: "Seeded bun, seared prawns, pea hummus, crispy bacon, rocket and lime mayo.",
         },
         price: "14,50",
-        img: "/img/burger-shrimp.png",
+        img: "/img/burger-shrimp.jpg",
         tags: ["new"],
       },
     ],
@@ -498,7 +498,7 @@ export const menu: MenuCategory[] = [
           en: "Fresh guacamole with corn nachos.",
         },
         price: "6,00",
-        img: "/img/guacamole.png",
+        img: "/img/guacamole.jpg",
         tags: ["veg"],
       },
       {
