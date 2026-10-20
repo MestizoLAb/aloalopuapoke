@@ -348,7 +348,7 @@ export const menu: MenuCategory[] = [
         },
         sizes: [
           { label: "Individuale", price: "8,00" },
-          { label: "Da condividere", price: "18,00" },
+          { label: "Da condividere", price: "15,00" },
         ],
         img: "/img/poke-nachos.jpg",
       },
@@ -414,6 +414,7 @@ export const menu: MenuCategory[] = [
               { it: "Mango", en: "Mango" },
               { it: "Mix bosco", en: "Mixed berries" },
               { it: "Papaya", en: "Papaya" },
+              { it: "Guava", en: "Guava" },
               { it: "Frutto di stagione", en: "Seasonal fruit" },
             ],
           },
@@ -454,26 +455,13 @@ export const menu: MenuCategory[] = [
       },
       {
         id: "cheesecake",
-        name: { it: "Cheesecake", en: "Cheesecake" },
+        name: { it: "Cheesecake Americana", en: "American Cheesecake" },
         desc: {
-          it: "Cheesecake cremosa fatta in casa, servita con nachos dolci. Scegli il gusto.",
-          en: "Creamy homemade cheesecake, served with sweet nachos. Choose your flavour.",
+          it: "Cheesecake americana fatta in casa, con 2 topping a scelta (+0,50€).",
+          en: "Homemade American cheesecake, with 2 toppings of your choice (+€0.50).",
         },
         price: "5,00",
         img: "/img/cheesecake.jpg",
-        choices: [
-          {
-            group: { it: "Gusto", en: "Flavour" },
-            options: [
-              { it: "Frutti di bosco", en: "Mixed berries" },
-              { it: "Burro di arachidi", en: "Peanut butter" },
-              { it: "Nutella", en: "Nutella" },
-              { it: "Mango", en: "Mango" },
-              { it: "Frutti di bosco, burro di arachidi e arachidi croccanti (+0,50€)", en: "Mixed berries, peanut butter & crunchy peanuts (+€0.50)" },
-              { it: "Burro di arachidi e Nutella con granola al cioccolato e arachidi tostate (+0,50€)", en: "Peanut butter & Nutella with chocolate granola & toasted peanuts (+€0.50)" },
-            ],
-          },
-        ],
       },
     ],
   },
@@ -517,7 +505,7 @@ export const menu: MenuCategory[] = [
       },
       {
         id: "tacos-gamberi",
-        name: { it: "Tacos di gamberi", en: "Prawn tacos" },
+        name: { it: "Tacos di gamberi (3)", en: "Prawn tacos (3)" },
         desc: {
           it: "Tortilla, gamberi sale pepe e aglio, guacamole e salsa verde messicana.",
           en: "Tortilla, prawns with salt, pepper & garlic, guacamole and Mexican green sauce.",
@@ -528,7 +516,7 @@ export const menu: MenuCategory[] = [
       },
       {
         id: "tostada-tonno",
-        name: { it: "Tostada di tonno", en: "Tuna tostada" },
+        name: { it: "Tostadas di tonno (2)", en: "Tuna tostadas (2)" },
         desc: {
           it: "Tortilla croccante, guacamole e insalata messicana di tonno.",
           en: "Crispy tortilla, guacamole and Mexican-style tuna salad.",
@@ -536,6 +524,26 @@ export const menu: MenuCategory[] = [
         price: "10,00",
         img: "/img/tostada-tonno.jpg",
         tags: ["raw", "new"],
+      },
+      {
+        id: "flautas-patata",
+        name: { it: "Flautas di patata (3)", en: "Potato flautas (3)" },
+        desc: {
+          it: "Tortilla fritta ripiena di patate con salsa de guacamole, panna acida e formaggio.",
+          en: "Fried tortilla filled with potato, with guacamole salsa, sour cream and cheese.",
+        },
+        price: "12,00",
+        tags: ["new"],
+      },
+      {
+        id: "enchiladas-rojas",
+        name: { it: "Enchiladas Rojas (3)", en: "Red enchiladas (3)" },
+        desc: {
+          it: "Tortillas di mais nella salsa roja di chile ancho e pasilla, ripiene di pollo, con formaggio fresco e cipolla. Servite con patate e carote, insalata e salsa verde.",
+          en: "Corn tortillas in red ancho & pasilla chile sauce, filled with chicken, with fresh cheese and onion. Served with potato and carrots, salad and green salsa.",
+        },
+        price: "12,00",
+        tags: ["new"],
       },
     ],
   },
