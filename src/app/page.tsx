@@ -114,8 +114,8 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             {it
-              ? "Alo Alo è il volto fresco e veloce di Mestizo Lab, il laboratorio di culture di Via Schiassi, insieme alla cucina messicana di La Frida. Le salse le facciamo noi, senza coloranti né conservanti — ed è lì che nascono piatti come i Poke Nachos, che altrove non trovi."
-              : "Alo Alo is the fresh, fast face of Mestizo Lab, the laboratory of cultures on Via Schiassi, alongside La Frida’s Mexican kitchen. We make the sauces ourselves, no colourings or preservatives — and that’s where dishes like Poke Nachos come from, the ones you won’t find elsewhere."}
+              ? "Alo Alo è il volto fresco e veloce di Mestizo Lab, il laboratorio di culture di Via Schiassi, con la sua cucina messicana sotto lo stesso tetto. Le salse le facciamo noi, senza coloranti né conservanti — ed è lì che nascono piatti come i Poke Nachos, che altrove non trovi."
+              : "Alo Alo is the fresh, fast face of Mestizo Lab, the laboratory of cultures on Via Schiassi, with its Mexican kitchen under the same roof. We make the sauces ourselves, no colourings or preservatives — and that’s where dishes like Poke Nachos come from, the ones you won’t find elsewhere."}
           </p>
           <div className="mt-8">
             <a

@@ -164,8 +164,8 @@ export function WhyDifferent() {
           </P>
           <P>
             {it
-              ? "Siamo un laboratorio di culture, non una pokeria in serie. Alo Alo nasce sotto lo stesso tetto di Mestizo Lab e dialoga con la cucina messicana di La Frida: da lì nascono piatti come i Poke Nachos, che altrove non esistono."
-              : "We're a laboratory of cultures, not an assembly-line poke shop. Alo Alo was born under the same roof as Mestizo Lab and talks to La Frida's Mexican kitchen: that's where dishes like Poke Nachos come from — you won't find them elsewhere."}
+              ? "Siamo un laboratorio di culture, non una pokeria in serie. Alo Alo nasce sotto lo stesso tetto di Mestizo Lab, con la sua cucina messicana: da lì nascono piatti come i Poke Nachos, che altrove non esistono."
+              : "We're a laboratory of cultures, not an assembly-line poke shop. Alo Alo was born under the same roof as Mestizo Lab, with its Mexican kitchen: that's where dishes like Poke Nachos come from — you won't find them elsewhere."}
           </P>
         </Reveal>
       </div>

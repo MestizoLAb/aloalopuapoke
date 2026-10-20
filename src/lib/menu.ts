@@ -27,7 +27,7 @@ export type MenuCategory = {
   intro: Bi;
   kind: "poke" | "single" | "drinks";
   dishes: Dish[];
-  /** Link opzionale a un sito esterno (es. La Frida → mestizo-lab.com). */
+  /** Link opzionale a un sito esterno (es. Cucina messicana → mestizo-lab.com). */
   link?: { label: Bi; href: string };
 };
 
@@ -466,16 +466,16 @@ export const menu: MenuCategory[] = [
     ],
   },
   {
-    id: "lafrida",
+    id: "cucina-messicana",
     kind: "single",
-    title: { it: "La Frida · Cucina messicana", en: "La Frida · Mexican kitchen" },
+    title: { it: "Mestizo Lab · Cucina messicana", en: "Mestizo Lab · Mexican kitchen" },
     intro: {
-      it: "La cucina messicana della famiglia Mestizo Lab, nello stesso locale: piatti da condividere e novità dal Messico.",
-      en: "The Mexican kitchen of the Mestizo Lab family, in the same venue: sharing plates and Mexican specials.",
+      it: "La cucina messicana di Mestizo Lab, nello stesso locale: piatti da condividere e novità dal Messico.",
+      en: "Mestizo Lab's Mexican kitchen, in the same venue: sharing plates and Mexican specials.",
     },
     link: {
-      label: { it: "Scopri La Frida su Mestizo Lab", en: "Discover La Frida on Mestizo Lab" },
-      href: "https://mestizo-lab.com/la-frida",
+      label: { it: "Scopri la Cucina messicana", en: "Discover the Mexican kitchen" },
+      href: "https://mestizo-lab.com/cucina-messicana-bologna",
     },
     dishes: [
       {

@@ -17,7 +17,7 @@ export const faqIt: Faq[] = [
   },
   {
     q: "Cosa rende Alo Alo diverso dalle altre pokerie di Bologna?",
-    a: "Due cose che le catene non hanno. La prima: le salse le facciamo noi in cucina, senza coloranti né conservanti — ed è la parte che dà sapore a una bowl. La seconda: Alo Alo fa parte di Mestizo Lab, un laboratorio di culture, e dialoga con la cucina messicana di La Frida. Da qui nascono piatti come i Poke Nachos, che altrove non trovi.",
+    a: "Due cose che le catene non hanno. La prima: le salse le facciamo noi in cucina, senza coloranti né conservanti — ed è la parte che dà sapore a una bowl. La seconda: Alo Alo fa parte di Mestizo Lab, un laboratorio di culture, con la sua cucina messicana sotto lo stesso tetto. Da qui nascono piatti come i Poke Nachos, che altrove non trovi.",
   },
   {
     q: "Posso avere una poke senza glutine o vegana a Bologna?",
@@ -45,7 +45,7 @@ export const faqIt: Faq[] = [
   },
   {
     q: "Oltre alle poke, cos’altro posso ordinare da Alo Alo?",
-    a: "Parecchio, se hai voglia di variare o ordinate in più persone con gusti diversi. Da Alo Alo Pua Pokè trovi avotoast (10–12€), i burger (14,50€), stuzzichini da condividere come il trio di polpette con salsa thai, i Poke Nachos e il ceviche, yogurt fruit bowl e dolci. I Poke Nachos nascono dall’incontro con La Frida.",
+    a: "Parecchio, se hai voglia di variare o ordinate in più persone con gusti diversi. Da Alo Alo Pua Pokè trovi avotoast (10–12€), i burger (14,50€), stuzzichini da condividere come il trio di polpette con salsa thai, i Poke Nachos e il ceviche, yogurt fruit bowl e dolci. I Poke Nachos nascono dall’incontro con la cucina messicana di Mestizo Lab.",
   },
 ];
 
@@ -60,7 +60,7 @@ export const faqEn: Faq[] = [
   },
   {
     q: "What makes Alo Alo different from other poke shops in Bologna?",
-    a: "Two things the chains don’t have. First: we make the sauces in-house, with no colourings or preservatives — the part that gives a bowl its flavour. Second: Alo Alo is part of Mestizo Lab, a laboratory of cultures, and talks to La Frida’s Mexican kitchen. That’s where dishes like Poke Nachos come from — you won’t find them elsewhere.",
+    a: "Two things the chains don’t have. First: we make the sauces in-house, with no colourings or preservatives — the part that gives a bowl its flavour. Second: Alo Alo is part of Mestizo Lab, a laboratory of cultures, with its Mexican kitchen under the same roof. That’s where dishes like Poke Nachos come from — you won’t find them elsewhere.",
   },
   {
     q: "Can I have a gluten-free or vegan poke in Bologna?",
@@ -88,6 +88,6 @@ export const faqEn: Faq[] = [
   },
   {
     q: "Besides poke, what else can I order from Alo Alo?",
-    a: "Plenty, if you fancy variety or you’re ordering with different tastes. At Alo Alo Pua Pokè you’ll find avotoast (€10–12), burgers (€14.50), small plates to share like the trio of bites with thai sauce, Poke Nachos and ceviche, yogurt fruit bowls and desserts. Poke Nachos were born from meeting La Frida.",
+    a: "Plenty, if you fancy variety or you’re ordering with different tastes. At Alo Alo Pua Pokè you’ll find avotoast (€10–12), burgers (€14.50), small plates to share like the trio of bites with thai sauce, Poke Nachos and ceviche, yogurt fruit bowls and desserts. Poke Nachos were born from Mestizo Lab’s Mexican kitchen.",
   },
 ];

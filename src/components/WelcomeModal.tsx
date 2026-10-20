@@ -21,7 +21,7 @@ const copy: Record<"it" | "en", Copy> = {
   it: {
     kicker: "Il laboratorio di culture di Bologna",
     title: "Benvenuto nel mondo Mestizo Lab",
-    lead: "Tre cucine, un tetto: poke hawaiano, toast & burger e cucina messicana. Tante specialità tutte da gustare.",
+    lead: "Due anime, un tetto: le bowl hawaiane di AloAlo e la cucina fusion di Mestizo Lab — burger, avotoast, cucina messicana e dolci.",
     tasteLabel: "Tante cose da gustare",
     ctaMenu: "Scopri il menù",
     ctaMestizo: "Scopri Mestizo Lab",
@@ -30,7 +30,7 @@ const copy: Record<"it" | "en", Copy> = {
   en: {
     kicker: "Bologna's laboratory of cultures",
     title: "Welcome to the world of Mestizo Lab",
-    lead: "Three kitchens, one roof: Hawaiian poke, toast & burgers and Mexican cuisine. So many specialities to enjoy.",
+    lead: "Two souls, one roof: AloAlo's Hawaiian bowls and Mestizo Lab's fusion kitchen — burgers, avotoast, Mexican cuisine and desserts.",
     tasteLabel: "So much to enjoy",
     ctaMenu: "Explore the menu",
     ctaMestizo: "Discover Mestizo Lab",
@@ -72,21 +72,9 @@ const cuisines: Cuisine[] = [
     logoW: 620,
     logoH: 363,
     logoAlt: "Mestizo Lab",
-    label: { it: "Toast & burger", en: "Toast & burgers" },
-    desc: { it: "Avocado toast, burger e brunch.", en: "Avocado toast, burgers and brunch." },
+    label: { it: "Cucina fusion & messicana", en: "Fusion & Mexican kitchen" },
+    desc: { it: "Burger, avotoast, tacos, ceviche e dolci.", en: "Burgers, avotoast, tacos, ceviche and desserts." },
     labelColor: "text-forest-mid",
-  },
-  {
-    href: "https://mestizo-lab.com/la-frida",
-    external: true,
-    photo: "/img/tacos-gamberi.jpg",
-    logo: "/img/lafrida-logo.png",
-    logoW: 560,
-    logoH: 297,
-    logoAlt: "La Frida · Cucina Messicana",
-    label: { it: "Cucina messicana", en: "Mexican cuisine" },
-    desc: { it: "Tacos, tostadas e dolci.", en: "Tacos, tostadas and sweets." },
-    labelColor: "text-pink-deep",
   },
 ];
 
@@ -193,7 +181,7 @@ export default function WelcomeModal() {
           </p>
 
           {/* Tre cucine */}
-          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+          <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {cuisines.map((c) => {
               const inner = (
                 <>
