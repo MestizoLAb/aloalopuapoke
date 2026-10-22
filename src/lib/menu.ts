@@ -527,7 +527,7 @@ export const menu: MenuCategory[] = [
       },
       {
         id: "flautas-patata",
-        name: { it: "Flautas di patata (3)", en: "Potato flautas (3)" },
+        name: { it: "Flautas di patata (4)", en: "Potato flautas (4)" },
         desc: {
           it: "Tortilla fritta ripiena di patate con salsa de guacamole, panna acida e formaggio.",
           en: "Fried tortilla filled with potato, with guacamole salsa, sour cream and cheese.",
@@ -539,11 +539,21 @@ export const menu: MenuCategory[] = [
         id: "enchiladas-rojas",
         name: { it: "Enchiladas Rojas (3)", en: "Red enchiladas (3)" },
         desc: {
-          it: "Tortillas di mais nella salsa roja di chile ancho e pasilla, ripiene di pollo, con formaggio fresco e cipolla. Servite con patate e carote, insalata e salsa verde.",
-          en: "Corn tortillas in red ancho & pasilla chile sauce, filled with chicken, with fresh cheese and onion. Served with potato and carrots, salad and green salsa.",
+          it: "Tortillas di mais nella salsa roja di chile ancho e pasilla, ripiene di formaggio fresco e cipolla. Servite con patate e carote, insalata e salsa verde. Con pollo +3€.",
+          en: "Corn tortillas in red ancho & pasilla chile sauce, filled with fresh cheese and onion. Served with potato and carrots, salad and green salsa. With chicken +€3.",
         },
         price: "12,00",
         tags: ["new"],
+      },
+      {
+        id: "pico-de-gallo",
+        name: { it: "Pico de Gallo", en: "Pico de Gallo" },
+        desc: {
+          it: "Salsa fresca messicana di pomodori, cipolla, peperoncino e lime.",
+          en: "Fresh Mexican salsa of tomato, onion, chilli and lime.",
+        },
+        price: "2,00",
+        tags: ["veg", "new"],
       },
     ],
   },
