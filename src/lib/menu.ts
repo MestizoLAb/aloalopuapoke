@@ -594,6 +594,7 @@ export const menu: MenuCategory[] = [
           en: "Fried tortilla filled with potato, with guacamole salsa, sour cream and cheese.",
         },
         price: "12,00",
+        img: "/img/flautas-patata.jpg",
         tags: ["new"],
       },
       {
@@ -604,6 +605,7 @@ export const menu: MenuCategory[] = [
           en: "Corn tortillas in red ancho & pasilla chile sauce, filled with fresh cheese and onion. Served with potato and carrots, salad and green salsa. With chicken +€3.",
         },
         price: "12,00",
+        img: "/img/enchiladas-rojas.jpg",
         tags: ["new"],
       },
       {
