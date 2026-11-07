@@ -371,6 +371,7 @@ export const menu: MenuCategory[] = [
           en: "Ribollita with black kale, cannellini beans, potato, carrots and tomato, served with toasted bread.",
         },
         price: "10,00",
+        img: "/img/zuppa-toscana.jpg",
         tags: ["veg", "new"],
       },
       {
@@ -381,6 +382,7 @@ export const menu: MenuCategory[] = [
           en: "Black kale, potato and onion, with a drizzle of extra virgin olive oil.",
         },
         price: "10,00",
+        img: "/img/vellutata-cavolo-nero.jpg",
         tags: ["veg", "new"],
       },
       {
@@ -391,6 +393,7 @@ export const menu: MenuCategory[] = [
           en: "Pumpkin, potato and spring onion, with a drizzle of extra virgin olive oil.",
         },
         price: "10,00",
+        img: "/img/vellutata-zucca.jpg",
         tags: ["veg", "new"],
       },
     ],
@@ -412,6 +415,7 @@ export const menu: MenuCategory[] = [
           en: "Seeded bun with 2 smash patties, stracciatella, grilled onion, tomato, lettuce and mayo. Served with onion rings.",
         },
         price: "18,00",
+        img: "/img/burger-smash.jpg",
         tags: ["new"],
       },
       {
@@ -507,6 +511,7 @@ export const menu: MenuCategory[] = [
           en: "Mexican rice pudding with pumpkin, cinnamon and pumpkin-spice, with a pecan crumble.",
         },
         price: "5,00",
+        img: "/img/arroz-leche.jpg",
         tags: ["new"],
       },
     ],
@@ -567,6 +572,7 @@ export const menu: MenuCategory[] = [
           en: "Tortilla with 200g of grilled, Mexican-marinated beef, with taco sauce, onion and coriander to taste.",
         },
         price: "17,00",
+        img: "/img/tacos-carne-asada.jpg",
         tags: ["new"],
       },
       {
