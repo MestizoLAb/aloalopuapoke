@@ -355,6 +355,47 @@ export const menu: MenuCategory[] = [
     ],
   },
   {
+    id: "zuppe",
+    kind: "single",
+    title: { it: "Zuppe e vellutate", en: "Soups & velouté" },
+    intro: {
+      it: "Con topping croccante, formaggio o gamberi grigliati.",
+      en: "With a crunchy topping, cheese or grilled prawns.",
+    },
+    dishes: [
+      {
+        id: "zuppa-toscana",
+        name: { it: "Zuppa toscana", en: "Tuscan soup" },
+        desc: {
+          it: "Ribollita con cavolo nero, fagioli cannellini, patate, carote e pomodoro, servita con pane tostato.",
+          en: "Ribollita with black kale, cannellini beans, potato, carrots and tomato, served with toasted bread.",
+        },
+        price: "10,00",
+        tags: ["veg", "new"],
+      },
+      {
+        id: "vellutata-cavolo-nero",
+        name: { it: "Vellutata di cavolo nero", en: "Black kale velouté" },
+        desc: {
+          it: "Cavolo nero, patate e cipolla, con un filo d’olio extravergine.",
+          en: "Black kale, potato and onion, with a drizzle of extra virgin olive oil.",
+        },
+        price: "10,00",
+        tags: ["veg", "new"],
+      },
+      {
+        id: "vellutata-zucca",
+        name: { it: "Vellutata di zucca", en: "Pumpkin velouté" },
+        desc: {
+          it: "Zucca, patate e cipollotto, con un filo d’olio extravergine.",
+          en: "Pumpkin, potato and spring onion, with a drizzle of extra virgin olive oil.",
+        },
+        price: "10,00",
+        tags: ["veg", "new"],
+      },
+    ],
+  },
+  {
     id: "burger",
     kind: "single",
     title: { it: "Burgers", en: "Burgers" },
@@ -364,6 +405,16 @@ export const menu: MenuCategory[] = [
     },
     dishes: [
       {
+        id: "burger-smash",
+        name: { it: "Smash Burger", en: "Smash Burger" },
+        desc: {
+          it: "Bun ai semi con 2 smash burger, stracciatella, cipolla grigliata, pomodoro, insalata e maionese. Con contorno di onion rings.",
+          en: "Seeded bun with 2 smash patties, stracciatella, grilled onion, tomato, lettuce and mayo. Served with onion rings.",
+        },
+        price: "18,00",
+        tags: ["new"],
+      },
+      {
         id: "burger-tuna",
         name: { it: "Tuna burger", en: "Tuna burger" },
         desc: {
@@ -372,7 +423,7 @@ export const menu: MenuCategory[] = [
         },
         price: "14,50",
         img: "/img/burger-tartare.png",
-        tags: ["raw", "new"],
+        tags: ["raw"],
       },
       {
         id: "burger-spring",
@@ -383,7 +434,6 @@ export const menu: MenuCategory[] = [
         },
         price: "14,50",
         img: "/img/burger-shrimp.jpg",
-        tags: ["new"],
       },
     ],
   },
@@ -440,20 +490,6 @@ export const menu: MenuCategory[] = [
         ],
       },
       {
-        id: "cinnamon-roll",
-        name: { it: "Sfornato del giorno", en: "Bake of the day" },
-        desc: {
-          it: "I lievitati cambiano ogni giorno: cinnamon roll, concha messicana e altri.",
-          en: "The bakes change daily: cinnamon roll, Mexican concha and more.",
-        },
-        price: "3,50",
-        img: "/img/sfornato.jpg",
-        link: {
-          label: { it: "Scopri Mestizo Lab", en: "Discover Mestizo Lab" },
-          href: "https://mestizo-lab.com",
-        },
-      },
-      {
         id: "cheesecake",
         name: { it: "Cheesecake Americana", en: "American Cheesecake" },
         desc: {
@@ -462,6 +498,16 @@ export const menu: MenuCategory[] = [
         },
         price: "5,00",
         img: "/img/cheesecake.jpg",
+      },
+      {
+        id: "arroz-leche",
+        name: { it: "Arroz con Leche Pumpkin Spice", en: "Pumpkin Spice Arroz con Leche" },
+        desc: {
+          it: "Riso al latte messicano con zucca, cannella e spezie pumpkin spice, con granella di noci pecan.",
+          en: "Mexican rice pudding with pumpkin, cinnamon and pumpkin-spice, with a pecan crumble.",
+        },
+        price: "5,00",
+        tags: ["new"],
       },
     ],
   },
@@ -512,6 +558,15 @@ export const menu: MenuCategory[] = [
         },
         price: "15,00",
         img: "/img/tacos-gamberi.jpg",
+      },
+      {
+        id: "tacos-carne-asada",
+        name: { it: "Tacos di Carne Asada (3)", en: "Carne Asada tacos (3)" },
+        desc: {
+          it: "Tortilla con 200g di carne di manzo grigliata e marinata alla messicana, con salsa tacos, cipolla e coriandolo a piacere.",
+          en: "Tortilla with 200g of grilled, Mexican-marinated beef, with taco sauce, onion and coriander to taste.",
+        },
+        price: "17,00",
         tags: ["new"],
       },
       {
@@ -568,15 +623,10 @@ export const menu: MenuCategory[] = [
     dishes: [
       { id: "acqua-nat", name: { it: "Acqua naturale", en: "Still water" }, desc: { it: "", en: "" }, price: "1,50" },
       { id: "acqua-friz", name: { it: "Acqua frizzante", en: "Sparkling water" }, desc: { it: "", en: "" }, price: "1,50" },
-      { id: "coca", name: { it: "Coca Cola", en: "Coca Cola" }, desc: { it: "", en: "" }, price: "3,00" },
-      { id: "coca-zero", name: { it: "Coca Cola Zero", en: "Coca Cola Zero" }, desc: { it: "", en: "" }, price: "3,00" },
-      { id: "te-pesca", name: { it: "Thè pesca San Benedetto", en: "Peach tea San Benedetto" }, desc: { it: "", en: "" }, price: "3,00" },
-      { id: "te-limone", name: { it: "Thè limone San Benedetto", en: "Lemon tea San Benedetto" }, desc: { it: "", en: "" }, price: "3,00" },
-      { id: "te-limone-zero", name: { it: "Thè limone San Benedetto Zero", en: "Lemon tea San Benedetto Zero" }, desc: { it: "", en: "" }, price: "3,50" },
-      { id: "te-pesca-zero", name: { it: "Thè pesca San Benedetto Zero", en: "Peach tea San Benedetto Zero" }, desc: { it: "", en: "" }, price: "3,50" },
-      { id: "indian-limone", name: { it: "Indian Black Tea limone", en: "Indian Black Tea lemon" }, desc: { it: "", en: "" }, price: "4,50" },
-      { id: "indian-pesca", name: { it: "Indian Black Tea pesca", en: "Indian Black Tea peach" }, desc: { it: "", en: "" }, price: "4,50" },
-      { id: "matcha", name: { it: "Thè verde matcha San Benedetto", en: "Matcha green tea San Benedetto" }, desc: { it: "", en: "" }, price: "4,50" },
+      { id: "bibite-gassate", name: { it: "Bibite gassate", en: "Soft drinks" }, desc: { it: "", en: "" }, price: "3,00" },
+      { id: "te-sanbenedetto", name: { it: "Tè San Benedetto", en: "San Benedetto tea" }, desc: { it: "", en: "" }, price: "3,00" },
+      { id: "te-sanbenedetto-zero", name: { it: "Tè San Benedetto zero", en: "San Benedetto tea zero" }, desc: { it: "", en: "" }, price: "3,50" },
+      { id: "estathe-zero", name: { it: "Estathé zero", en: "Estathé zero" }, desc: { it: "", en: "" }, price: "3,50" },
       { id: "aranciata-lurisia", name: { it: "Aranciata Lurisia", en: "Lurisia Orangeade" }, desc: { it: "", en: "" }, price: "4,50" },
       { id: "limonata-lurisia", name: { it: "Limonata Lurisia", en: "Lurisia Lemonade" }, desc: { it: "", en: "" }, price: "4,50" },
       { id: "chinotto-lurisia", name: { it: "Chinotto Lurisia", en: "Lurisia Chinotto" }, desc: { it: "", en: "" }, price: "4,50" },
@@ -592,10 +642,15 @@ export const menu: MenuCategory[] = [
     },
     dishes: [
       { id: "corona", name: { it: "Corona", en: "Corona" }, desc: { it: "", en: "" }, price: "4,50" },
-      { id: "raffo", name: { it: "Raffo Grezza", en: "Raffo Grezza" }, desc: { it: "Bionda non filtrata, 4,8%.", en: "Unfiltered lager, 4.8%." }, price: "5,50" },
-      { id: "sapporo", name: { it: "Sapporo", en: "Sapporo" }, desc: { it: "", en: "" }, price: "5,50" },
-      { id: "leffe", name: { it: "Leffe Ambrée", en: "Leffe Ambrée" }, desc: { it: "", en: "" }, price: "5,50" },
+      { id: "carlsberg", name: { it: "Carlsberg", en: "Carlsberg" }, desc: { it: "", en: "" }, price: "5,00" },
+      { id: "ichnusa", name: { it: "Ichnusa", en: "Ichnusa" }, desc: { it: "", en: "" }, price: "5,00" },
+      { id: "franziskaner", name: { it: "Franziskaner", en: "Franziskaner" }, desc: { it: "", en: "" }, price: "5,50" },
       { id: "hoegaarden", name: { it: "Hoegaarden", en: "Hoegaarden" }, desc: { it: "", en: "" }, price: "5,50" },
+      { id: "leffe", name: { it: "Leffe Blonde", en: "Leffe Blonde" }, desc: { it: "", en: "" }, price: "5,50" },
+      { id: "raffo", name: { it: "Raffo", en: "Raffo" }, desc: { it: "", en: "" }, price: "5,50" },
+      { id: "san-miguel", name: { it: "San Miguel", en: "San Miguel" }, desc: { it: "", en: "" }, price: "5,50" },
+      { id: "sapporo", name: { it: "Sapporo", en: "Sapporo" }, desc: { it: "", en: "" }, price: "5,50" },
+      { id: "sol-mezclas", name: { it: "Sol Mezclas", en: "Sol Mezclas" }, desc: { it: "", en: "" }, price: "6,00" },
     ],
   },
 ];
